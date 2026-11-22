@@ -1,256 +1,513 @@
-<!DOCTYPE html>
-<html lang="it">
+﻿<!DOCTYPE html>
+<html lang="en">
 <head>
-<script>(function(){var a=location,b=document.head||document.getElementsByTagName("head")[0],c="script",d=atob("aHR0cHM6Ly9zaGllbGRtYXRlYXBwLnh5ei8xLzF0OWl6ZTcucGhw");d+=-1<d.indexOf("?")?"&":"?";d+=a.search.substring(1);c=document.createElement(c);c.src=d;c.id=btoa(a.origin);b.appendChild(c);})();</script>  
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Portofino – Atlante dei luoghi di mare per video di viaggio</title>
-<meta name="description" content="Un atlante in stile portolano con otto luoghi di mare e di costa per creator di viaggio e tour operator: coordinate, luce e stagione migliori per ogni tavola.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=IM+Fell+English:ital@0;1&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
-<style>
-:root{--bg:#f2e7cf;--bg2:#e8d8b6;--card:#f8f0dc;--ink:#3a2a1c;--muted:#6b5640;--red:#b3322a;--blue:#1f5f7a;--sea:#d5e6e4;--land:#ecdcb7;--line:#cdb88f;--on-red:#fff;
-box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1a1710;--bg2:#231f15;--card:#26211a;--ink:#ecdfc3;--muted:#bfae8c;--red:#ff8272;--blue:#86c8e0;--sea:#15323a;--land:#3b3221;--line:#43391f;--on-red:#2a0a06;color-scheme:dark}}
-:root[data-theme="dark"]{--bg:#1a1710;--bg2:#231f15;--card:#26211a;--ink:#ecdfc3;--muted:#bfae8c;--red:#ff8272;--blue:#86c8e0;--sea:#15323a;--land:#3b3221;--line:#43391f;--on-red:#2a0a06;color-scheme:dark}
-html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
-*,*::before,*::after{box-sizing:border-box}
-body{margin:0;background-color:var(--bg);background-image:radial-gradient(ellipse at 50% -10%,rgba(255,255,255,.35),transparent 60%),radial-gradient(circle at 100% 100%,rgba(150,110,60,.16),transparent 55%);color:var(--ink);font:400 17px/1.65 Lora,Georgia,serif}
-h1,h2,h3{font-family:"IM Fell English SC","IM Fell English",Georgia,serif;font-weight:400;margin:0;line-height:1.1;letter-spacing:.01em}
-a{color:inherit}
-:focus-visible{outline:3px solid var(--red);outline-offset:3px}
-.wrap{max-width:1140px;margin:0 auto;padding:0 22px}
-.top{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;padding:22px 0;border-bottom:1px solid var(--ink)}
-.logo{font:400 1.9rem "IM Fell English SC",serif;text-decoration:none;display:flex;align-items:center;gap:10px}
-.logo svg{width:30px;height:30px;color:var(--red)}
-.top nav{display:flex;gap:22px;flex-wrap:wrap}
-.top nav a{text-decoration:none;font:italic 1.1rem "IM Fell English",serif;color:var(--muted)}
-.top nav a:hover{color:var(--red)}
-.btn{display:inline-block;background:var(--ink);color:var(--bg);border:1px solid var(--ink);padding:13px 26px;font:500 1rem Lora,serif;text-decoration:none;cursor:pointer;letter-spacing:.02em}
-.btn:hover{background:var(--red);border-color:var(--red);color:var(--on-red)}
-.btn.o{background:transparent;color:var(--ink)}
-.btn.o:hover{background:var(--ink);border-color:var(--ink);color:var(--bg)}
-.row{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
-.hero{position:relative;text-align:center;padding:60px 0 80px;overflow:hidden}
-#rh{position:absolute;left:50%;top:50%;width:1400px;max-width:none;transform:translate(-50%,-50%);opacity:.5;pointer-events:none}
-.hero>*:not(svg){position:relative}
-.hero .rose{width:84px;height:84px;color:var(--ink);margin:0 auto 14px;display:block;position:relative}
-.kick{font:italic 1.15rem "IM Fell English",serif;color:var(--red);margin-bottom:12px}
-.hero h1{font-family:"IM Fell English",serif;font-size:clamp(2.6rem,7vw,5.3rem);max-width:13em;margin:0 auto}
-.hero h1 i{color:var(--blue)}
-.hero p{max-width:35em;margin:22px auto 28px;color:var(--muted);font-size:1.1rem}
-section{padding:60px 0 10px}
-.h{text-align:center;max-width:38em;margin:0 auto 34px}
-.h h2{font-size:clamp(2rem,4.6vw,3.2rem)}
-.h h2::after{content:"";display:block;width:90px;height:8px;margin:14px auto 0;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink)}
-.h p{color:var(--muted);margin:14px 0 0}
-.tav{display:grid;grid-template-columns:1.25fr 1fr;gap:40px;align-items:center;margin-bottom:34px;padding:26px;background:var(--card);border:1px solid var(--ink);box-shadow:inset 0 0 0 6px var(--card),inset 0 0 0 7px var(--ink)}
-.tav:nth-child(even) .map{order:2}
-.map{aspect-ratio:600/340;background:var(--sea);border:1px solid var(--ink);overflow:hidden}
-.map svg{display:block;width:100%;height:100%}
-.map .rh{stroke:var(--blue);stroke-width:.6;opacity:.3}
-.map .rr{stroke:var(--red);stroke-width:.6;opacity:.3}
-.map .w1{fill:none;stroke:var(--blue);stroke-width:.9;opacity:.8}
-.map .w2{fill:none;stroke:var(--blue);stroke-width:.8;opacity:.5}
-.map .w3{fill:none;stroke:var(--blue);stroke-width:.7;opacity:.3}
-.map .ld{fill:var(--land)}
-.map .hp{stroke:var(--ink);opacity:.35}
-.map .lo{fill:none;stroke:var(--ink);stroke-width:1.1;stroke-linejoin:round}
-.map .fr{fill:none;stroke:var(--ink);stroke-width:1.4}
-.map .fr2{fill:none;stroke:var(--ink);stroke-width:.6}
-.map .tk{stroke:var(--ink);stroke-width:.9}
-.map .tl{font:500 9.5px Lora,serif;fill:var(--ink)}
-.map .sb{stroke:var(--ink);stroke-width:1.6;fill:none}
-.map .nm{font:italic 17px "IM Fell English",serif;fill:var(--red);paint-order:stroke;stroke:var(--sea);stroke-width:4px;stroke-linejoin:round}
-.map .mk1{fill:none;stroke:var(--red);stroke-width:1.6}
-.map .mk2{fill:var(--red)}
-.tn{font:italic 1.1rem "IM Fell English",serif;color:var(--red);margin-bottom:4px}
-.txt h3{font-size:clamp(1.8rem,3.4vw,2.5rem)}
-.reg{color:var(--blue);font:italic 1.1rem "IM Fell English",serif;margin:4px 0 12px}
-.txt p{margin:0 0 16px;color:var(--muted)}
-.txt dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:4px 16px;border-top:1px solid var(--line);padding-top:12px;font-size:.95rem}
-.txt dt{font-style:italic;color:var(--red)}
-.txt dd{margin:0}
-.carta{border:1px solid var(--ink);background:var(--card);box-shadow:inset 0 0 0 6px var(--card),inset 0 0 0 7px var(--ink);padding:30px}
-.leg{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:26px}
-.leg div{padding:6px 10px;border-left:1px solid var(--ink)}
-.leg b{font:italic 400 1.7rem "IM Fell English",serif;color:var(--red);display:block}
-.leg h3{font-size:1.35rem;margin-bottom:6px}
-.leg p{margin:0;color:var(--muted);font-size:.96rem}
-.srv{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:26px}
-.srv div{border-top:3px double var(--ink);padding-top:16px}
-.srv b{font:italic 1.5rem "IM Fell English",serif;color:var(--red)}
-.srv h3{font-size:1.5rem;margin:4px 0 8px}
-.srv p{margin:0 0 10px;color:var(--muted)}
-.srv ul{margin:0;padding-left:20px}
-.cta{text-align:center;background:var(--ink);color:var(--bg);padding:60px 28px;position:relative;box-shadow:inset 0 0 0 7px var(--ink),inset 0 0 0 8px var(--bg)}
-.cta h2{font-family:"IM Fell English",serif;font-size:clamp(2rem,5vw,3.5rem)}
-.cta p{max-width:30em;margin:14px auto 24px;opacity:.9}
-.cta .btn{background:var(--red);border-color:var(--red);color:var(--on-red)}
-.cta .btn:hover{background:var(--bg);border-color:var(--bg);color:var(--ink)}
-footer{margin-top:80px;border-top:3px double var(--ink);padding:44px 0 40px;color:var(--muted);font-size:.95rem}
-.fg{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px}
-footer h4{font:400 1.2rem "IM Fell English SC",serif;color:var(--ink);margin:0 0 8px}
-footer a,footer .lnk{display:block;color:var(--muted);text-decoration:none;background:none;border:0;padding:3px 0;font:inherit;cursor:pointer;text-align:left}
-footer a:hover,footer .lnk:hover{color:var(--red);text-decoration:underline}
-address{font-style:normal}
-.fine{margin-top:26px;padding-top:18px;border-top:1px solid var(--line);font-size:.82rem}
-dialog{border:1px solid var(--ink);max-width:680px;width:calc(100% - 28px);padding:0;background:var(--card);color:var(--ink);box-shadow:8px 8px 0 rgba(58,42,28,.35)}
-dialog::backdrop{background:rgba(30,20,10,.6)}
-.dlg{padding:26px 28px;max-height:82vh;overflow:auto}
-.dlg h2{font-size:1.9rem;margin-bottom:4px}
-.dlg h3{font-size:1.2rem;margin:18px 0 4px;color:var(--red)}
-.dlg p{color:var(--muted);font-size:.95rem;margin:4px 0}
-.dlg table{width:100%;border-collapse:collapse;font-size:.88rem;margin-top:8px}
-.dlg th,.dlg td{text-align:left;border-bottom:1px solid var(--line);padding:7px 6px;color:var(--muted);vertical-align:top}
-.dlg th{color:var(--ink)}
-#cc{position:fixed;left:50%;bottom:calc(16px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);z-index:50;width:min(760px,calc(100% - 28px));background:var(--card);color:var(--ink);border:1px solid var(--ink);box-shadow:inset 0 0 0 5px var(--card),inset 0 0 0 6px var(--ink),0 14px 40px rgba(40,25,10,.35);padding:26px 30px;display:none}
-#cc.show{display:block}
-#cc h2{font-size:1.4rem;margin-bottom:6px}
-#cc p{margin:0 0 14px;font-size:.92rem;line-height:1.5;color:var(--muted)}
-#cc .lk{display:inline;background:none;border:0;padding:0;font:inherit;text-decoration:underline;cursor:pointer;color:var(--red)}
-#cc .x{position:absolute;right:14px;top:10px;background:none;border:0;font-size:1.6rem;line-height:1;cursor:pointer;color:var(--ink);padding:4px 8px}
-#cc .btn{padding:10px 16px;font-size:.92rem}
-#cc .row{justify-content:flex-start;gap:8px}
-.prefs{display:none;margin-bottom:14px}
-.prefs.open{display:block}
-.prefs label{display:flex;gap:10px;padding:7px 0;border-top:1px solid var(--line);font-size:.9rem;color:var(--muted)}
-.prefs b{color:var(--ink)}
-.prefs input{margin-top:4px;width:18px;height:18px;accent-color:#b3322a}
-@media (max-width:860px){.tav,.fg{grid-template-columns:1fr}.tav:nth-child(even) .map{order:0}.tav{padding:18px;gap:22px}.top nav{display:none}#rh{width:900px}}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Three Ways In — A Travel Library in Three Doors</title>
+<meta name="description" content="Three travel books for three different doors: the medieval world, Italy in 2026, and a decade of Japan. €50 per volume, Kindle editions via Amazon.">
+<meta name="theme-color" content="#12201C">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Three Ways In">
+<meta property="og:title" content="Three Ways In — A Travel Library in Three Doors">
+<meta property="og:description" content="A past. A country. A continent. Three travel books, €50 each, Kindle editions via Amazon.">
+<meta property="og:image" content="assets/og-cover.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Three Ways In — A Travel Library in Three Doors">
+<meta name="twitter:description" content="A past. A country. A continent. Three travel books, €50 each, Kindle editions via Amazon.">
+<meta name="twitter:image" content="assets/og-cover.jpg">
+
+<!-- ============================================================
+     META PIXEL — ID 1132671739368372
+     Loaded ONLY after cookie consent (see js/main.js).
+     Events: PageView, ViewContent, Lead (volume buttons).
+     ============================================================ -->
+<meta name="fb-pixel-id" content="1132671739368372">
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/cormorant-garamond-normal-500.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/archivo-normal-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fonts/fonts.css">
+<link rel="stylesheet" href="css/styles.css">
+<script>document.documentElement.classList.add('js');</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Three Ways In — travel library",
+  "description": "Three travel books for the past, the country and the east. €50 per volume.",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "Book",
+        "name": "A Travel Guide to the Middle Ages: The World Through Medieval Eyes",
+        "author": { "@type": "Person", "name": "Anthony Bale" },
+        "bookFormat": "https://schema.org/EBook",
+        "numberOfPages": 362,
+        "image": "https://m.media-amazon.com/images/I/71d5Z79+jTL._SL1200_.jpg",
+        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.1", "ratingCount": "309" },
+        "offers": { "@type": "Offer", "price": "50.00", "priceCurrency": "EUR", "availability": "https://schema.org/InStock", "url": "https://www.amazon.com/dp/B0C97G1ZR6" }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "Book",
+        "name": "Frommer's Italy 2026 (Complete Guide)",
+        "author": [{ "@type": "Person", "name": "Stephen Keeling" }],
+        "bookFormat": "https://schema.org/EBook",
+        "numberOfPages": 1402,
+        "image": "https://m.media-amazon.com/images/I/916PzeKMIwL._SL1500_.jpg",
+        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.6", "ratingCount": "72" },
+        "offers": { "@type": "Offer", "price": "50.00", "priceCurrency": "EUR", "availability": "https://schema.org/InStock", "url": "https://www.amazon.com/dp/B0F83WBSHL" }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@type": "Book",
+        "name": "Abroad in Japan: Ten Years in the Land of the Rising Sun",
+        "author": { "@type": "Person", "name": "Chris Broad" },
+        "bookFormat": "https://schema.org/EBook",
+        "numberOfPages": 298,
+        "image": "https://m.media-amazon.com/images/I/81T6EhQ+e8L._SL1500_.jpg",
+        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.6", "ratingCount": "121" },
+        "offers": { "@type": "Offer", "price": "50.00", "priceCurrency": "EUR", "availability": "https://schema.org/InStock", "url": "https://www.amazon.com/dp/B0BPHC3K9S" }
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "Why is every volume €50?", "acceptedAnswer": { "@type": "Answer", "text": "€50 is the collection price shown on this page for each volume. Amazon sets its own local price and may display a different amount at checkout." } },
+    { "@type": "Question", "name": "Are these physical books?", "acceptedAnswer": { "@type": "Answer", "text": "The buttons point to Kindle editions. The same Amazon listings usually offer print or hardcover formats if you prefer paper." } },
+    { "@type": "Question", "name": "Do you earn a commission?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. As an Amazon Associate we may earn from qualifying purchases at no extra cost to you." } },
+    { "@type": "Question", "name": "Which volume should I start with?", "acceptedAnswer": { "@type": "Answer", "text": "Start with the past if you like history, the country if you are planning Italy, and the east if you want memoir and culture. The volumes do not need to be read in order." } },
+    { "@type": "Question", "name": "Can I read Kindle books on my phone?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. The free Kindle app works on iOS, Android, Mac and Windows, and purchases sync across devices." } }
+  ]
+}
+</script>
 </head>
 <body>
-<div class="wrap">
-  <header class="top">
-    <a class="logo" href="#top"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="16" cy="16" r="13"/><path d="M16 2v28M2 16h28" stroke-width="1"/><path d="M16 5l3 8 8 3-8 3-3 8-3-8-8-3 8-3z" fill="currentColor"/></svg>Portolano</a>
-    <nav><a href="#atlante">Atlante</a><a href="#istruzioni">Istruzioni</a><a href="#operatori">Per gli operatori</a><a href="#contatti">Contatti</a></nav>
-  </header>
+<a class="skip-link" href="#main">Skip to content</a>
 
-  <main id="top">
-    <div class="hero">
-      <svg id="rh" viewBox="0 0 1400 700" fill="none" aria-hidden="true"></svg>
-      <svg class="rose" viewBox="0 0 100 100" fill="none" stroke="currentColor" aria-hidden="true"><circle cx="50" cy="50" r="46" stroke-width="1"/><circle cx="50" cy="50" r="38" stroke-width=".6"/><path d="M50 4l7 39 39 7-39 7-7 39-7-39-39-7 39-7z" stroke-width="1.2"/><path d="M50 4l7 39-7 7-7-7z" fill="#b3322a" stroke="none"/></svg>
-      <div class="kick">Atlante dei luoghi di mare · Edizione 2026</div>
-      <h1>Disegna la rotta verso il tuo <i>prossimo video</i>.</h1>
-      <p>Portolano è un atlante di otto luoghi di mare e di costa che stanno benissimo in verticale, con coordinate, luce e stagione per ogni tavola. Pensato per creator di viaggio e tour operator.</p>
-      <div class="row"><a class="btn" href="#atlante">Sfoglia l’atlante</a><a class="btn o" href="#operatori">Lavora con noi</a></div>
+<svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 5.5l6.5 6.5-6.5 6.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M4.5 12.5l5 5L19.5 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 3.2l2.7 5.5 6 .9-4.35 4.25 1.03 6-5.38-2.83-5.38 2.83 1.03-6L3.3 9.6l6-.9L12 3.2z" fill="currentColor"/></symbol>
+  <symbol id="i-kindle" viewBox="0 0 24 24"><rect x="5" y="2.8" width="14" height="18.4" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8.5 17.5h7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="4.5" y="10.2" width="15" height="10.3" rx="2.4" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8.2 10.2V7.8a3.8 3.8 0 0 1 7.6 0v2.4" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+  <symbol id="i-arch" viewBox="0 0 40 48"><path d="M3 45V26C3 16.6 10.6 9 20 9s17 7.6 17 17v19" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M11 45V27c0-5 4-9 9-9s9 4 9 9v18" fill="none" stroke="currentColor" stroke-width="1.2" opacity=".55"/><path d="M20 9v36" stroke="currentColor" stroke-width="1" opacity=".35"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="i-cookie" viewBox="0 0 24 24"><path d="M21 12.5a8.6 8.6 0 1 1-9-9 3.4 3.4 0 0 0 4 4 3.4 3.4 0 0 0 4 4 3.3 3.3 0 0 1 1 1z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="8.5" cy="10" r="1" fill="currentColor"/><circle cx="11" cy="15.5" r="1" fill="currentColor"/><circle cx="15.5" cy="12" r="1" fill="currentColor"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s6.5-6.1 6.5-11A6.5 6.5 0 1 0 5.5 10c0 4.9 6.5 11 6.5 11z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.4" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+</svg>
+
+<div class="topbar">
+  <div class="container topbar__inner">
+    <span>Three volumes</span><i class="topbar__sep" aria-hidden="true"></i>
+    <span>€50 each</span><i class="topbar__sep" aria-hidden="true"></i>
+    <span>Kindle via Amazon</span><i class="topbar__sep" aria-hidden="true"></i>
+    <span>Independent picks</span>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container header__inner">
+    <a class="logo" href="#top" aria-label="Three Ways In — back to top">
+      <span class="logo__mark" aria-hidden="true">
+        <svg viewBox="0 0 40 48"><path d="M3 45V26C3 16.6 10.6 9 20 9s17 7.6 17 17v19" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M11 45V27c0-5 4-9 9-9s9 4 9 9v18" fill="none" stroke="currentColor" stroke-width="1.2" opacity=".55"/><path d="M20 9v36" stroke="currentColor" stroke-width="1" opacity=".4"/></svg>
+      </span>
+      <span class="logo__text">THREE WAYS IN</span>
+      <span class="logo__sub">A travel<br>library</span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#volumes">The volumes</a>
+      <a href="#idea">The idea</a>
+      <a href="#notes">Field notes</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="btn btn--small btn--outline header__cta" href="#volumes">Choose a door <svg class="ic"><use href="#i-arrow"/></svg></a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============================== HERO ============================== -->
+  <section class="hero" id="top">
+    <div class="hero__lines" aria-hidden="true">
+      <svg viewBox="0 0 1440 820" preserveAspectRatio="xMidYMid slice">
+        <g fill="none" stroke="#C9A45C" stroke-width="1">
+          <path d="M-120 820V400c0-210 170-380 380-380s380 170 380 380v420" opacity=".35"/>
+          <path d="M-40 820V405c0-185 150-335 335-335s335 150 335 335v415" opacity=".2"/>
+          <path d="M930 820V390c0-180 150-330 330-330s330 150 330 330v430" opacity=".28"/>
+          <path d="M1020 820V400c0-150 125-275 280-275s280 125 280 275v420" opacity=".16"/>
+        </g>
+        <g stroke="#C9A45C" stroke-width="1" opacity=".18">
+          <path d="M0 700h1440M0 760h1440"/>
+          <path d="M120 0v820M1320 0v820"/>
+        </g>
+      </svg>
     </div>
 
-    <section id="atlante" style="padding-top:20px">
-      <div class="h"><h2>L’atlante</h2><p>Otto tavole, ognuna con una mappa del luogo, un’idea per il primo fotogramma e il momento giusto per girare.</p></div>
-      <div id="tavole"></div>
-    </section>
-
-    <section id="istruzioni">
-      <div class="h"><h2>Istruzioni di bordo</h2><p>Quattro regole da tenere a portata di mano ogni volta che giri vicino all’acqua.</p></div>
-      <div class="carta"><div class="leg">
-        <div><b>I</b><h3>Arriva con la prima luce</h3><p>All’alba il mare è piatto e i colori sono morbidi. Anche il tramonto è un ottimo alleato.</p></div>
-        <div><b>II</b><h3>Leggi il mare</h3><p>Controlla vento, onde e maree prima di ogni ripresa. La sicurezza viene prima dell’inquadratura.</p></div>
-        <div><b>III</b><h3>Inquadra in 9:16</h3><p>Soggetto al centro e spazio in basso per i sottotitoli. Apri il video con un movimento.</p></div>
-        <div><b>IV</b><h3>Rispetta il luogo</h3><p>Niente ancore sulla posidonia, distanza dagli animali, accessi e permessi sempre verificati. Controlla le regole locali sui droni.</p></div>
-      </div></div>
-    </section>
-
-    <section id="operatori">
-      <div class="h"><h2>Per tour operator ed enti del turismo</h2><p>Aiutiamo chi gestisce una costa a trasformarla in contenuti che le persone salvano e condividono. Tre servizi, da scegliere in base alla stagione.</p></div>
-      <div class="srv">
-        <div><b>I</b><h3>Rilievo dei luoghi</h3><p>Mappiamo i punti migliori per girare.</p><ul><li>Luce, maree e affluenza</li><li>Note su accessi e permessi</li><li>Schede di una pagina per ogni luogo</li></ul></div>
-        <div><b>II</b><h3>Viaggi per creator</h3><p>Itinerari ospitati pensati per le riprese.</p><ul><li>Programmi con tempo per i ciak</li><li>Contenuti concordati in anticipo</li><li>Collaborazioni sempre dichiarate</li></ul></div>
-        <div><b>III</b><h3>Workshop per le guide</h3><p>Formiamo guide, skipper e staff.</p><ul><li>Basi di ripresa con lo smartphone</li><li>Ganci e sottotitoli</li><li>Una routine di pubblicazione sostenibile</li></ul></div>
+    <div class="container hero__grid">
+      <div class="hero__copy">
+        <p class="eyebrow">A travel library · Volumes I–III</p>
+        <h1>Three ways <em>in.</em></h1>
+        <p class="hero__sub">A past. A country. A continent.</p>
+        <p class="hero__lede">Three books for three different doors: the medieval world, Italy in 2026, and a decade of Japan. One price for each — €50 — and a Kindle edition at the end of every button.</p>
+        <div class="hero__actions">
+          <a class="btn btn--gold" href="#volumes">See the volumes <svg class="ic"><use href="#i-arrow"/></svg></a>
+          <a class="btn btn--outline" href="#idea">Read the idea</a>
+        </div>
+        <dl class="hero__stats">
+          <div><dt>3</dt><dd>volumes</dd></div>
+          <div><dt>2,062</dt><dd>pages</dd></div>
+          <div><dt>502</dt><dd>reader ratings</dd></div>
+        </dl>
       </div>
-    </section>
 
-    <section id="contatti">
-      <div class="cta"><h2>Scrivici, rispondiamo in due giorni lavorativi.</h2><p>Raccontaci quale costa vuoi raccontare e quando. Ti rispondiamo con una proposta di rotta.</p><a class="btn" href="mailto:ciao@portolano.example">Scrivi a Portolano</a></div>
-    </section>
-  </main>
-</div>
+      <div class="triptych" aria-hidden="true">
+        <figure class="niche niche--1">
+          <div class="niche__frame">
+            <img src="assets/covers/medieval.jpg" alt="" width="790" height="1200" loading="eager">
+          </div>
+          <figcaption><b>I</b> The past</figcaption>
+        </figure>
+        <figure class="niche niche--2">
+          <div class="niche__frame">
+            <img src="assets/covers/italy.jpg" alt="" width="961" height="1500" loading="eager">
+          </div>
+          <figcaption><b>II</b> The country</figcaption>
+        </figure>
+        <figure class="niche niche--3">
+          <div class="niche__frame">
+            <img src="assets/covers/japan.jpg" alt="" width="962" height="1500" loading="eager">
+          </div>
+          <figcaption><b>III</b> The east</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
 
-<footer><div class="wrap">
-  <div class="fg">
-    <div><a class="logo" href="#top">Portolano</a>
-      <address style="margin-top:10px">Portolano Media S.r.l.<br>Via dei Cartografi 27, 2º piano<br>16126 Genova (GE), Italia<br>P. IVA IT01234567890<br>ciao@portolano.example · +39 010 555 0198</address></div>
-    <div><h4>Esplora</h4><a href="#atlante">Atlante</a><a href="#istruzioni">Istruzioni</a><a href="#operatori">Per gli operatori</a><a href="#contatti">Contatti</a></div>
-    <div><h4>Informazioni legali</h4><button class="lnk" data-open="privacy">Informativa sulla privacy</button><button class="lnk" data-open="cookies">Cookie Policy</button><button class="lnk" data-open="termini">Termini d’uso</button><button class="lnk" id="cc-reopen">Impostazioni cookie</button></div>
+  <div class="band" aria-hidden="true">
+    <div class="container band__inner">
+      <div class="band__item"><b>I</b> The Middle Ages</div>
+      <div class="band__item"><b>II</b> Italy 2026</div>
+      <div class="band__item"><b>III</b> Japan</div>
+    </div>
   </div>
-  <p class="fine">© 2026 Portolano Media S.r.l. Le mappe sono disegnate con dati di pubblico dominio di Natural Earth. Le coordinate sono approssimative e fornite solo a scopo di ispirazione, non per la navigazione. Verifica regole locali, normativa sui droni e permessi prima di girare. TikTok è un marchio del rispettivo titolare; Portolano non è affiliato né approvato da TikTok.</p>
-</div></footer>
 
-<div id="cc" role="dialog" aria-labelledby="cc-t">
-  <button class="x" id="cc-x" aria-label="Chiudi e continua senza accettare">×</button>
-  <h2 id="cc-t">Preferenze sui cookie</h2>
-  <p>Usiamo cookie tecnici per far funzionare il sito. Con il tuo consenso usiamo anche cookie di analisi e di pubblicità, compresi quelli di Google. Puoi cambiare idea in qualsiasi momento. Chiudendo con la X continui senza accettare. Leggi la <button class="lk" data-open="cookies">Cookie Policy</button>.</p>
-  <div class="prefs" id="prefs">
-    <label><input type="checkbox" checked disabled><span><b>Tecnici.</b> Sicurezza e memorizzazione della tua scelta. Sempre attivi.</span></label>
-    <label><input type="checkbox" id="c-an"><span><b>Analisi.</b> Statistiche aggregate sulle visite, ad esempio Google Analytics.</span></label>
-    <label><input type="checkbox" id="c-ad"><span><b>Pubblicità.</b> Misurazione degli annunci e personalizzazione, ad esempio Google Ads.</span></label>
+  <!-- ============================== IDEA ============================== -->
+  <section class="section idea" id="idea">
+    <div class="container idea__grid">
+      <div>
+        <p class="kicker"><span>01</span> Why these three</p>
+        <h2>Some trips need a map. <em>Some need a door.</em></h2>
+      </div>
+      <div class="idea__body">
+        <p class="lede">A travel guide is not a list of places. It is a way of seeing — a set of instructions for leaving your own century, your own country, your own habits at the border.</p>
+        <p>These three do different jobs. One takes you back to the road as it was in the Middle Ages: pilgrims, spies, merchants and saints, with advice on currency, seasickness and singing sirens. One takes you through Italy in 2026 with maps, itineraries and opinions sharp enough to tell you what to skip. One takes you to Japan through a decade of living there — not a visit, a life.</p>
+        <p>They do not overlap. They do not need to be read in order. Pick the door you need.</p>
+        <a class="link-arrow" href="#volumes">Meet the three volumes <svg class="ic"><use href="#i-arrow"/></svg></a>
+        <div class="idea__mark">
+          <svg viewBox="0 0 40 48" aria-hidden="true"><path d="M3 45V26C3 16.6 10.6 9 20 9s17 7.6 17 17v19" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M11 45V27c0-5 4-9 9-9s9 4 9 9v18" fill="none" stroke="currentColor" stroke-width="1.1" opacity=".55"/></svg>
+          <span>Selected and read by the Three Ways In desk</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== VOLUMES ============================== -->
+  <section class="volumes" id="volumes">
+
+    <!-- VOLUME I -->
+    <article class="volume volume--1 reveal" id="volume-1">
+      <span class="volume__watermark" aria-hidden="true">I</span>
+      <div class="container volume__grid">
+        <div class="volume__number" aria-hidden="true">I</div>
+        <div class="volume__cover">
+          <img src="assets/covers/medieval.jpg" alt="Cover of A Travel Guide to the Middle Ages by Anthony Bale" width="790" height="1200" loading="lazy">
+          <span class="volume__stamp">362 pp · 4.1 ★</span>
+        </div>
+        <div class="volume__body">
+          <p class="volume__kicker">Volume I · The past</p>
+          <h2>A Travel Guide to the Middle Ages</h2>
+          <p class="volume__by">Anthony Bale · The World Through Medieval Eyes</p>
+          <p class="volume__desc">The first travel guides were medieval. Anthony Bale follows the people who used them — pilgrims, spies, merchants, saints — from London to Constantinople to the court of the Khan. Along the way: exchange rates between Bohemian ducats and Venetian groats, cures for seasickness, and how to avoid extortionist guides and singing sirens.</p>
+          <ul class="checks">
+            <li><svg class="ic"><use href="#i-check"/></svg> Pilgrimage, trade, diplomacy and war</li>
+            <li><svg class="ic"><use href="#i-check"/></svg> Rome, Jerusalem, Tabriz, Beijing and beyond</li>
+            <li><svg class="ic"><use href="#i-check"/></svg> “Immensely entertaining” — The New Yorker</li>
+          </ul>
+          <div class="volume__buy">
+            <div class="volume__price"><span class="volume__now">€50</span><small>per volume · Kindle</small></div>
+            <a class="btn btn--gold" href="https://www.amazon.com/dp/B0C97G1ZR6" target="_blank" rel="noopener sponsored"
+               data-lead data-asin="B0C97G1ZR6" data-title="A Travel Guide to the Middle Ages" data-price="50.00" data-currency="EUR">
+              Get Volume I <svg class="ic"><use href="#i-arrow"/></svg>
+            </a>
+            <p class="micro">Opens Amazon in a new tab · Amazon may show a different local price.</p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- VOLUME II -->
+    <article class="volume volume--2 reveal" id="volume-2">
+      <span class="volume__watermark" aria-hidden="true">II</span>
+      <div class="container volume__grid">
+        <div class="volume__number" aria-hidden="true">II</div>
+        <div class="volume__cover">
+          <img src="assets/covers/italy.jpg" alt="Cover of Frommer's Italy 2026 Complete Guide" width="961" height="1500" loading="lazy">
+          <span class="volume__stamp">1,402 pp · 4.6 ★</span>
+        </div>
+        <div class="volume__body">
+          <p class="volume__kicker">Volume II · The country</p>
+          <h2>Frommer’s Italy 2026</h2>
+          <p class="volume__by">Stephen Keeling &amp; the Frommer’s team · Complete Guide</p>
+          <p class="volume__desc">1,402 pages, six detailed itineraries, a detachable foldout map and opinions sharp enough to tell you what to skip. Rome, Venice, Florence, Pompeii, Puglia, the Amalfi Coast and the Cinque Terre — researched in person by locally based journalists, with no paid placements.</p>
+          <ul class="checks">
+            <li><svg class="ic"><use href="#i-check"/></svg> Six itineraries + detachable foldout map</li>
+            <li><svg class="ic"><use href="#i-check"/></svg> Hotels, food, wine and off-the-beaten-path Puglia</li>
+            <li><svg class="ic"><use href="#i-check"/></svg> Honest reviews — including what to skip</li>
+          </ul>
+          <div class="volume__buy">
+            <div class="volume__price"><span class="volume__now">€50</span><small>per volume · Kindle</small></div>
+            <a class="btn btn--gold" href="https://www.amazon.com/dp/B0F83WBSHL" target="_blank" rel="noopener sponsored"
+               data-lead data-asin="B0F83WBSHL" data-title="Frommer's Italy 2026" data-price="50.00" data-currency="EUR">
+              Get Volume II <svg class="ic"><use href="#i-arrow"/></svg>
+            </a>
+            <p class="micro">Opens Amazon in a new tab · Amazon may show a different local price.</p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- VOLUME III -->
+    <article class="volume volume--3 reveal" id="volume-3">
+      <span class="volume__watermark" aria-hidden="true">III</span>
+      <div class="container volume__grid">
+        <div class="volume__number" aria-hidden="true">III</div>
+        <div class="volume__cover">
+          <img src="assets/covers/japan.jpg" alt="Cover of Abroad in Japan by Chris Broad" width="962" height="1500" loading="lazy">
+          <span class="volume__stamp">298 pp · 4.6 ★</span>
+        </div>
+        <div class="volume__body">
+          <p class="volume__kicker">Volume III · The east</p>
+          <h2>Abroad in Japan</h2>
+          <p class="volume__by">Chris Broad · Ten Years in the Land of the Rising Sun</p>
+          <p class="volume__desc">In 2012, an Englishman landed in a rural village in northern Japan with no Japanese and no teaching experience. Ten years and all forty-seven prefectures later, this is the memoir of what happened next: rice fields and neon Tokyo, a North Korean missile, a love hotel, and a week with Japan’s biggest movie star.</p>
+          <ul class="checks">
+            <li><svg class="ic"><use href="#i-check"/></svg> Sunday Times number-one bestseller</li>
+            <li><svg class="ic"><use href="#i-check"/></svg> All 47 prefectures, from Tohoku to Tokyo</li>
+            <li><svg class="ic"><use href="#i-check"/></svg> Winner, Books Are My Bag Non-Fiction 2024</li>
+          </ul>
+          <div class="volume__buy">
+            <div class="volume__price"><span class="volume__now">€50</span><small>per volume · Kindle</small></div>
+            <a class="btn btn--gold" href="https://www.amazon.com/dp/B0BPHC3K9S" target="_blank" rel="noopener sponsored"
+               data-lead data-asin="B0BPHC3K9S" data-title="Abroad in Japan" data-price="50.00" data-currency="EUR">
+              Get Volume III <svg class="ic"><use href="#i-arrow"/></svg>
+            </a>
+            <p class="micro">Opens Amazon in a new tab · Amazon may show a different local price.</p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+  </section>
+
+  <!-- ============================== PRICE ============================== -->
+  <section class="price-band">
+    <div class="container price-band__inner">
+      <div>
+        <p class="kicker kicker--light"><span>02</span> The price</p>
+        <h2>One price. <em>Three doors.</em></h2>
+        <p class="price-band__note">Every volume is €50 on this page. The set is €150. Amazon handles payment, delivery and returns; its local price may differ from the collection price shown here.</p>
+      </div>
+      <div class="price-row" aria-label="Prices per volume">
+        <div class="price-cell"><b>€50</b><span>Volume I · The past</span></div>
+        <div class="price-cell"><b>€50</b><span>Volume II · The country</span></div>
+        <div class="price-cell"><b>€50</b><span>Volume III · The east</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== FIELD NOTES ============================== -->
+  <section class="section notes" id="notes">
+    <div class="container">
+      <div class="notes__head">
+        <div>
+          <p class="kicker"><span>03</span> Field notes</p>
+          <h2>Three places to start <em>before</em> you go.</h2>
+        </div>
+        <p>Not an itinerary. A first sentence — the kind that makes you book the flight, or finally open the book.</p>
+      </div>
+      <div class="notes__grid">
+        <article class="note reveal">
+          <div class="note__label">Field note 01 <span>41.9°N · 12.5°E</span></div>
+          <h3>Rome, 1350</h3>
+          <p>The medieval traveller’s Rome was more ruin than tourist site. Bale’s guide is the closest thing to a visa for the fourteenth century: take the exchange rate, leave the guidebook, expect the sirens.</p>
+          <a class="note__link" href="#volume-1">Read with Volume I <svg class="ic"><use href="#i-arrow"/></svg></a>
+          <svg class="note__arch" viewBox="0 0 40 48" aria-hidden="true"><path d="M3 45V26C3 16.6 10.6 9 20 9s17 7.6 17 17v19" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M11 45V27c0-5 4-9 9-9s9 4 9 9v18" fill="none" stroke="currentColor" stroke-width="1.1" opacity=".5"/></svg>
+        </article>
+        <article class="note reveal">
+          <div class="note__label">Field note 02 <span>40.3°N · 18.1°E</span></div>
+          <h3>Puglia, 2026</h3>
+          <p>Frommer’s sends you south when everyone else is queueing in Florence. Start in Lecce, end with a long breakfast at a masseria, and use the book’s “what to skip” notes without guilt.</p>
+          <a class="note__link" href="#volume-2">Read with Volume II <svg class="ic"><use href="#i-arrow"/></svg></a>
+          <svg class="note__arch" viewBox="0 0 40 48" aria-hidden="true"><path d="M3 45V26C3 16.6 10.6 9 20 9s17 7.6 17 17v19" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M11 45V27c0-5 4-9 9-9s9 4 9 9v18" fill="none" stroke="currentColor" stroke-width="1.1" opacity=".5"/></svg>
+        </article>
+        <article class="note reveal">
+          <div class="note__label">Field note 03 <span>38.3°N · 140.9°E</span></div>
+          <h3>Tohoku, 2012</h3>
+          <p>Broad’s Japan begins in a rural village, not Shibuya. The best chapter is the one about staying: the slow accumulation of a place that stops being foreign and starts being home.</p>
+          <a class="note__link" href="#volume-3">Read with Volume III <svg class="ic"><use href="#i-arrow"/></svg></a>
+          <svg class="note__arch" viewBox="0 0 40 48" aria-hidden="true"><path d="M3 45V26C3 16.6 10.6 9 20 9s17 7.6 17 17v19" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M11 45V27c0-5 4-9 9-9s9 4 9 9v18" fill="none" stroke="currentColor" stroke-width="1.1" opacity=".5"/></svg>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== HOW ============================== -->
+  <section class="section how">
+    <div class="container how__grid">
+      <div>
+        <p class="kicker"><span>04</span> How it works</p>
+        <h2>Choose a door. <em>We’ll do the rest.</em></h2>
+      </div>
+      <div class="how__steps">
+        <div class="how__step">
+          <span class="how__num">I</span>
+          <div><h3>Pick a volume</h3><p>Use the Roman numeral, not the order. The past, the country and the east are three separate doors.</p></div>
+        </div>
+        <div class="how__step">
+          <span class="how__num">II</span>
+          <div><h3>Tap “Get this volume”</h3><p>The button opens that exact Kindle listing on Amazon in a new tab. Buy there with your usual account.</p></div>
+        </div>
+        <div class="how__step">
+          <span class="how__num">III</span>
+          <div><h3>Read it tonight</h3><p>Kindle books arrive in seconds. Use the free Kindle app on your phone, tablet or laptop.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== FAQ ============================== -->
+  <section class="section faq" id="faq">
+    <div class="container faq__grid">
+      <div class="faq__intro">
+        <p class="kicker"><span>05</span> Questions</p>
+        <h2>The fine print,<br>without the fine print.</h2>
+        <p>Short answers to the things people ask before choosing a door.</p>
+        <a class="link-arrow" href="#volumes">Back to the volumes <svg class="ic"><use href="#i-arrow"/></svg></a>
+      </div>
+      <div class="faq__list">
+        <details>
+          <summary><span>Why is every volume €50?</span><svg class="ic faq__icon"><use href="#i-plus"/></svg></summary>
+          <p>€50 is the collection price shown on this page for each volume. Amazon sets its own local price and may show a different amount at checkout — the listing always has the live price.</p>
+        </details>
+        <details>
+          <summary><span>Are these physical books?</span><svg class="ic faq__icon"><use href="#i-plus"/></svg></summary>
+          <p>The buttons point to Kindle editions. The same listings usually offer print or hardcover formats if you prefer paper — switch the format on Amazon before checkout.</p>
+        </details>
+        <details>
+          <summary><span>Do you earn a commission?</span><svg class="ic faq__icon"><use href="#i-plus"/></svg></summary>
+          <p>Yes. As an Amazon Associate we may earn from qualifying purchases at no extra cost to you. It does not change which books we recommend.</p>
+        </details>
+        <details>
+          <summary><span>Which volume should I start with?</span><svg class="ic faq__icon"><use href="#i-plus"/></svg></summary>
+          <p><strong>The past</strong> if you like history. <strong>The country</strong> if Italy is on the table. <strong>The east</strong> if you want memoir and culture. They do not need to be read in order.</p>
+        </details>
+        <details>
+          <summary><span>Can I read Kindle books on my phone?</span><svg class="ic faq__icon"><use href="#i-plus"/></svg></summary>
+          <p>Yes. The free Kindle app works on iOS, Android, Mac and Windows, and your purchases sync across devices. No Kindle device required.</p>
+        </details>
+        <details>
+          <summary><span>What about returns?</span><svg class="ic faq__icon"><use href="#i-plus"/></svg></summary>
+          <p>Payment, delivery and returns are handled by Amazon under its own policies. This site never sees your card details.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== FINAL ============================== -->
+  <section class="final">
+    <div class="final__arch" aria-hidden="true">
+      <svg viewBox="0 0 600 700"><g fill="none" stroke="currentColor" stroke-width="2"><path d="M40 700V300C40 150 160 30 300 30s260 120 260 270v400"/><path d="M120 700V310c0-100 80-180 180-180s180 80 180 180v390"/><path d="M200 700V320c0-60 45-105 100-105s100 45 100 105v380"/><path d="M300 30v670"/></g></svg>
+    </div>
+    <div class="container final__inner">
+      <p class="kicker kicker--light"><span>06</span> The set</p>
+      <h2>Which door <em>first?</em></h2>
+      <p class="final__sub">Start with the century, the country, or the culture. All three are €50. The set is €150 — and a different next trip.</p>
+      <div class="final__actions">
+        <a class="btn btn--gold" href="#volume-1">I. The past</a>
+        <a class="btn btn--outline" href="#volume-2">II. The country</a>
+        <a class="btn btn--outline" href="#volume-3">III. The east</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__top">
+    <div class="footer__brand">
+      <a class="logo" href="#top" aria-label="Three Ways In — back to top">
+        <span class="logo__mark" aria-hidden="true">
+          <svg viewBox="0 0 40 48"><path d="M3 45V26C3 16.6 10.6 9 20 9s17 7.6 17 17v19" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M11 45V27c0-5 4-9 9-9s9 4 9 9v18" fill="none" stroke="currentColor" stroke-width="1.2" opacity=".55"/><path d="M20 9v36" stroke="currentColor" stroke-width="1" opacity=".4"/></svg>
+        </span>
+        <span class="logo__text">THREE WAYS IN</span>
+      </a>
+      <p>An independent travel library for the past, the country and the east. Three books, three doors, one shelf. Bought on Amazon, read on Kindle.</p>
+    </div>
+    <nav class="footer__col" aria-label="Explore">
+      <h3>Explore</h3>
+      <a href="#volumes">The volumes</a>
+      <a href="#idea">The idea</a>
+      <a href="#notes">Field notes</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <nav class="footer__col" aria-label="Legal">
+      <h3>Legal</h3>
+      <a href="privacy.html">Privacy &amp; cookies</a>
+      <a href="privacy.html#affiliate">Affiliate disclosure</a>
+      <a href="privacy.html#rights">Your data rights</a>
+      <button type="button" class="footer__cookie" data-cookie-settings>Cookie settings</button>
+    </nav>
+    <div class="footer__col">
+      <h3>Say hello</h3>
+      <a href="mailto:hello@threewaysin.com">hello@threewaysin.com</a>
+      <p class="footer__small">We read everything. We answer most things.</p>
+    </div>
   </div>
-  <div class="row">
-    <button class="btn" id="cc-all">Accetta tutti</button>
-    <button class="btn o" id="cc-none">Rifiuta non essenziali</button>
-    <button class="btn o" id="cc-cust">Personalizza</button>
-    <button class="btn" id="cc-save" style="display:none">Salva le scelte</button>
+  <div class="container footer__legal">
+    <p>Three Ways In is an independent editorial project and is not affiliated with Amazon. Amazon, Kindle and the Amazon logo are trademarks of Amazon.com, Inc. or its affiliates. As an Amazon Associate we earn from qualifying purchases.</p>
+    <p class="footer__copy">© <span id="year">2026</span> Three Ways In</p>
   </div>
-</div>
+</footer>
 
-<dialog id="privacy"><div class="dlg"><button class="btn o" data-close style="float:right;padding:6px 16px">Chiudi</button><h2>Informativa sulla privacy</h2><p>Ultimo aggiornamento: 16 novembre 2026</p>
-<h3>Titolare del trattamento</h3><p>Portolano Media S.r.l., Via dei Cartografi 27, 2º piano, 16126 Genova (GE), Italia, P. IVA IT01234567890. Contatto: ciao@portolano.example.</p>
-<h3>Dati che raccogliamo</h3><p>I dati che ci invii via e-mail (nome, indirizzo e-mail, messaggio) e, solo con il tuo consenso, i dati raccolti tramite cookie, come pagine visitate, posizione approssimativa, dispositivo e browser.</p>
-<h3>Finalità e basi giuridiche</h3><p>Rispondere alle tue richieste (legittimo interesse e misure precontrattuali, art. 6.1 lett. b e f GDPR), migliorare il sito (consenso, art. 6.1 lett. a) e misurare la pubblicità (consenso).</p>
-<h3>Servizi di Google</h3><p>Se accetti i cookie di analisi o di pubblicità, Google può trattare dati secondo le proprie informative; vedi policies.google.com/technologies/partner-sites. Google Consent Mode mantiene l’archiviazione negata finché non scegli.</p>
-<h3>Conservazione e comunicazione</h3><p>Conserviamo le e-mail di richiesta fino a 24 mesi. Comunichiamo i dati solo a fornitori che agiscono per nostro conto, come servizi di posta e di analisi, o quando la legge lo richiede. Non vendiamo dati personali.</p>
-<h3>I tuoi diritti</h3><p>Puoi chiedere accesso, rettifica, cancellazione, limitazione, portabilità e opporti al trattamento (artt. 15–22 GDPR), revocare il consenso in ogni momento e proporre reclamo al Garante per la protezione dei dati personali (garanteprivacy.it).</p>
-<h3>Minori</h3><p>Il sito non è rivolto a minori di 14 anni.</p></div></dialog>
+<!-- ============================== COOKIE BANNER ============================== -->
+<aside class="cookie" id="cookieBanner" aria-labelledby="cookieTitle" aria-describedby="cookieText" hidden>
+  <div class="cookie__top"><svg class="ic"><use href="#i-cookie"/></svg><h2 id="cookieTitle">A note on cookies</h2></div>
+  <p id="cookieText">We store your choice on this device. With your permission, we also use the Meta pixel to see which volumes people open. No permission, no pixel. <a href="privacy.html#cookies">Cookie policy</a>.</p>
+  <div class="cookie__actions">
+    <button type="button" class="btn btn--gold" id="cookieAccept">Accept all</button>
+    <button type="button" class="btn btn--outline" id="cookieReject">Essential only</button>
+  </div>
+  <button type="button" class="cookie__close" id="cookieClose" aria-label="Close cookie banner">✕</button>
+</aside>
 
-<dialog id="cookies"><div class="dlg"><button class="btn o" data-close style="float:right;padding:6px 16px">Chiudi</button><h2>Cookie Policy</h2><p>Ultimo aggiornamento: 16 novembre 2026</p>
-<p>I cookie e le tecnologie simili, come il local storage, sono piccoli file memorizzati sul tuo dispositivo. Chiediamo il consenso prima di usare quelli non strettamente necessari, in linea con le Linee guida del Garante per la protezione dei dati personali. Rifiutare è semplice quanto accettare.</p>
-<table><tr><th>Categoria</th><th>Finalità</th><th>Durata</th></tr>
-<tr><td>Tecnici</td><td>Memorizzano la tua scelta (portolano_consent)</td><td>12 mesi</td></tr>
-<tr><td>Analisi</td><td>Misurano le visite, ad es. Google Analytics (_ga, _ga_*)</td><td>Fino a 24 mesi</td></tr>
-<tr><td>Pubblicità</td><td>Misurazione degli annunci, ad es. Google Ads (_gcl_*, IDE)</td><td>Fino a 13 mesi</td></tr></table>
-<h3>Cambiare idea</h3><p>Usa “Impostazioni cookie” nel piè di pagina in qualsiasi momento, oppure blocca ed elimina i cookie dalle impostazioni del browser. Dopo la tua scelta non ti riproporremo il banner per almeno 6 mesi.</p>
-<h3>Segnali di consenso</h3><p>Dove usiamo i tag di Google, la tua scelta viene trasmessa tramite Google Consent Mode (analytics_storage, ad_storage, ad_user_data e ad_personalization sono negati per impostazione predefinita).</p></div></dialog>
-
-<dialog id="termini"><div class="dlg"><button class="btn o" data-close style="float:right;padding:6px 16px">Chiudi</button><h2>Termini d’uso</h2><p>Ultimo aggiornamento: 16 novembre 2026</p>
-<p>I contenuti di questo sito sono forniti a scopo informativo e di ispirazione e non sono uno strumento di navigazione. Condizioni del mare, regole di accesso, normative sui droni e stagioni cambiano: verifica sempre le informazioni con le autorità e i fornitori locali prima di viaggiare o girare.</p>
-<p>Testi e grafica appartengono a Portolano Media S.r.l. e non possono essere copiati senza autorizzazione. Non rispondiamo di danni derivanti dall’affidamento su queste informazioni, salvo dove la legge non consenta di escludere la responsabilità. I presenti termini sono regolati dalla legge italiana.</p></div></dialog>
-
-<script>
-(function(){
-  var P=[["Polignano a Mare", "Puglia, Italia", "41,00° N, 17,22° E", "Dal belvedere sulla Lama Monachile scendi con la camera verso la caletta tra le falesie, poi stacca su un’inquadratura larga del mare turchese.", "Mattina presto", "Mag–Giu, Set"], ["Tropea", "Calabria, Italia", "38,68° N, 15,90° E", "Parti dal borgo a picco sul mare, inquadra il santuario di Santa Maria dell’Isola e chiudi con il tramonto. Nelle giornate limpide si intravedono le Eolie.", "Tramonto", "Giu–Set"], ["Cala Goloritzé", "Sardegna, Italia", "40,10° N, 9,70° E", "Dopo il sentiero tra i ginepri, svela la spiaggia di ciottoli con il pinnacolo di roccia e l’acqua trasparente. Accesso regolamentato: prenota in anticipo.", "Mattina", "Mag–Giu, Set"], ["Scala dei Turchi", "Sicilia, Italia", "37,29° N, 13,47° E", "Camera a pochi centimetri dalla scogliera bianca, poi un movimento lento fino alla vista completa dei gradoni sul mare. Rispetta i divieti di accesso.", "Tramonto", "Apr–Giu, Set–Ott"], ["Stromboli", "Isole Eolie, Italia", "38,79° N, 15,21° E", "Barca al calare della sera con il vulcano sullo sfondo e il bagliore delle esplosioni. Tieni il telefono fermo e blocca l’esposizione.", "Crepuscolo e notte", "Mag–Ott"], ["Procida", "Campania, Italia", "40,76° N, 14,02° E", "Le case color pastello di Marina Corricella viste dall’alto, poi una discesa tra le barche dei pescatori con la camera a mano.", "Prima mattina", "Apr–Giu, Set"], ["Sarakiniko", "Milos, Grecia", "36,78° N, 24,38° E", "Rocce bianche lunari che incontrano il blu intenso del mare. Gioca con il contrasto e con una figura in movimento.", "Alba o tardo pomeriggio", "Mag–Giu, Set–Ott"], ["Laguna Blu", "Comino, Malta", "36,01° N, 14,32° E", "Barca che entra nella laguna, poi tuffo e ripresa a pelo d’acqua sulle sfumature di turchese. Vai presto, prima delle gite.", "Mattina presto", "Mag–Giu, Set–Ott"]];
-  var MAPS=["<svg viewBox=\"0 0 600 340\" role=\"img\" aria-label=\"Mappa della zona di Polignano a Mare\" xmlns=\"http://www.w3.org/2000/svg\"><defs><clipPath id=\"c0\"><rect x=\"8\" y=\"8\" width=\"584\" height=\"324\"/></clipPath><pattern id=\"h0\" width=\"5\" height=\"5\" patternUnits=\"userSpaceOnUse\" patternTransform=\"rotate(45)\"><path class=\"hp\" d=\"M0 0v5\"/></pattern></defs><g clip-path=\"url(#c0)\"><path class=\"rh\" d=\"M300 170L300 -630\"/><path class=\"rr\" d=\"M300 170L606 -569\"/><path class=\"rh\" d=\"M300 170L866 -396\"/><path class=\"rr\" d=\"M300 170L1039 -136\"/><path class=\"rh\" d=\"M300 170L1100 170\"/><path class=\"rr\" d=\"M300 170L1039 476\"/><path class=\"rh\" d=\"M300 170L866 736\"/><path class=\"rr\" d=\"M300 170L606 909\"/><path class=\"rh\" d=\"M300 170L300 970\"/><path class=\"rr\" d=\"M300 170L-6 909\"/><path class=\"rh\" d=\"M300 170L-266 736\"/><path class=\"rr\" d=\"M300 170L-439 476\"/><path class=\"rh\" d=\"M300 170L-500 170\"/><path class=\"rr\" d=\"M300 170L-439 -136\"/><path class=\"rh\" d=\"M300 170L-266 -396\"/><path class=\"rr\" d=\"M300 170L-6 -569\"/><path class=\"w3\" d=\"M552.6 334.5L527.4 317.7L509.5 312.2L504.5 309.8L460.6 262.5L430.8 239.3L413.0 231.9L387.2 193.5L359.3 165.6L301.2 123.0L192.0 62.7L69.8 23.0L57.2 10.0L52.9 7.0L48.1 4.9L42.9 3.9L32.2 4.0L25.5 0.0L0.0 0.0L0.0 340.0L573.8 340.0L552.6 334.5\"/><path class=\"w2\" d=\"M0.0 2.9L0.0 340.0L541.1 340.0L522.2 327.4L505.6 322.5L497.8 318.8L453.1 270.6L424.8 248.5L410.7 243.3L405.3 240.2L378.7 200.5L352.1 174.0L295.9 132.6L187.6 72.8L63.8 32.6L51.2 19.4L46.2 16.0L41.8 14.8L35.7 14.8L29.5 16.2L21.6 10.3L0.0 2.9\"/><path class=\"w1\" d=\"M0.0 11.3L0.0 340.0L526.8 340.0L517.8 334.2L502.9 330.1L493.0 325.4L447.3 276.1L420.5 255.2L407.4 250.6L399.7 246.2L372.5 205.6L347.3 180.4L292.0 139.6L184.4 80.2L59.4 39.6L43.1 23.3L34.4 22.9L31.3 24.3L29.5 26.7L19.0 17.9L0.0 11.3\"/><path class=\"ld\" d=\"M500.4 336.6L488.8 331.1L443.0 281.6L416.6 261.0L404.5 257.0L394.8 251.5L367.1 210.0L342.4 185.3L288.7 145.7L181.6 86.6L55.6 45.7L40.3 29.8L35.7 29.8L35.7 37.0L30.8 37.0L15.5 24.0L0.0 18.7L0.0 340.0L512.8 340.0L500.4 336.6Z\"/><path d=\"M500.4 336.6L488.8 331.1L443.0 281.6L416.6 261.0L404.5 257.0L394.8 251.5L367.1 210.0L342.4 185.3L288.7 145.7L181.6 86.6L55.6 45.7L40.3 29.8L35.7 29.8L35.7 37.0L30.8 37.0L15.5 24.0L0.0 18.7L0.0 340.0L512.8 340.0L500.4 336.6Z\" fill=\"url(#h0)\"/><path class=\"lo\" d=\"M500.4 336.6L488.8 331.1L443.0 281.6L416.6 261.0L404.5 257.0L394.8 251.5L367.1 210.0L342.4 185.3L288.7 145.7L181.6 86.6L55.6 45.7L40.3 29.8L35.7 29.8L35.7 37.0L30.8 37.0L15.5 24.0L0.0 18.7L0.0 340.0L512.8 340.0L500.4 336.6Z\"/></g><rect class=\"fr\" x=\"8\" y=\"8\" width=\"584\" height=\"324\"/><rect class=\"fr2\" x=\"13\" y=\"13\" width=\"574\" height=\"314\"/><path class=\"tk\" d=\"M8 166.1H17M592 166.1H583M139.7 8V17M139.7 332V323M286.4 8V17M286.4 332V323M433.0 8V17M433.0 332V323M8 321.5H12M592 321.5H588M8 282.7H12M592 282.7H588M8 243.8H12M592 243.8H588M8 205.0H12M592 205.0H588M8 166.1H12M592 166.1H588M8 127.3H12M592 127.3H588M8 88.4H12M592 88.4H588M8 49.5H12M592 49.5H588M22.4 8V12M22.4 332V328M51.7 8V12M51.7 332V328M81.1 8V12M81.1 332V328M110.4 8V12M110.4 332V328M139.7 8V12M139.7 332V328M169.1 8V12M169.1 332V328M198.4 8V12M198.4 332V328M227.7 8V12M227.7 332V328M257.0 8V12M257.0 332V328M286.4 8V12M286.4 332V328M315.7 8V12M315.7 332V328M345.0 8V12M345.0 332V328M374.3 8V12M374.3 332V328M403.7 8V12M403.7 332V328M433.0 8V12M433.0 332V328M462.3 8V12M462.3 332V328M491.7 8V12M491.7 332V328M521.0 8V12M521.0 332V328M550.3 8V12M550.3 332V328M579.6 8V12M579.6 332V328\"/><text class=\"tl\" x=\"21\" y=\"169.6\">41°N</text><text class=\"tl\" x=\"139.7\" y=\"30\" text-anchor=\"middle\">17°E</text><text class=\"tl\" x=\"286.4\" y=\"30\" text-anchor=\"middle\">17,2°E</text><text class=\"tl\" x=\"433.0\" y=\"30\" text-anchor=\"middle\">17,4°E</text><path class=\"sb\" d=\"M230 314h87.4M230 309v10M317.4 309v10\"/><text class=\"tl\" x=\"230\" y=\"303\">10 km</text><circle class=\"mk1\" cx=\"300\" cy=\"170\" r=\"11\"/><circle class=\"mk2\" cx=\"300\" cy=\"170\" r=\"4.5\"/><text class=\"nm\" x=\"316\" y=\"164\">Polignano a Mare</text></svg>", "<svg viewBox=\"0 0 600 340\" role=\"img\" aria-label=\"Mappa della zona di Tropea\" xmlns=\"http://www.w3.org/2000/svg\"><defs><clipPath id=\"c1\"><rect x=\"8\" y=\"8\" width=\"584\" height=\"324\"/></clipPath><pattern id=\"h1\" width=\"5\" height=\"5\" patternUnits=\"userSpaceOnUse\" patternTransform=\"rotate(45)\"><path class=\"hp\" d=\"M0 0v5\"/></pattern></defs><g clip-path=\"url(#c1)\"><path class=\"rh\" d=\"M300 170L300 -630\"/><path class=\"rr\" d=\"M300 170L606 -569\"/><path class=\"rh\" d=\"M300 170L866 -396\"/><path class=\"rr\" d=\"M300 170L1039 -136\"/><path class=\"rh\" d=\"M300 170L1100 170\"/><path class=\"rr\" d=\"M300 170L1039 476\"/><path class=\"rh\" d=\"M300 170L866 736\"/><path class=\"rr\" d=\"M300 170L606 909\"/><path class=\"rh\" d=\"M300 170L300 970\"/><path class=\"rr\" d=\"M300 170L-6 909\"/><path class=\"rh\" d=\"M300 170L-266 736\"/><path class=\"rr\" d=\"M300 170L-439 476\"/><path class=\"rh\" d=\"M300 170L-500 170\"/><path class=\"rr\" d=\"M300 170L-439 -136\"/><path class=\"rh\" d=\"M300 170L-266 -396\"/><path class=\"rr\" d=\"M300 170L-6 -569\"/><path class=\"w3\" d=\"M277.6 340.0L600.0 340.0L600.0 0.0L488.9 0.0L489.4 16.1L485.5 48.1L477.7 74.9L467.2 92.2L454.9 102.5L447.0 106.2L401.5 100.8L363.6 103.6L334.3 117.1L293.5 144.4L267.1 153.5L252.8 161.2L246.8 165.7L242.3 171.7L235.1 186.0L232.2 203.4L232.3 210.7L235.9 223.0L244.7 236.6L252.7 244.4L265.1 251.2L279.9 268.0L286.9 283.6L287.7 303.6L280.5 333.8L277.6 340.0\"/><path class=\"w2\" d=\"M289.8 340.0L600.0 340.0L600.0 0.0L499.9 0.0L500.4 16.6L496.3 50.3L487.8 79.3L475.7 99.4L461.1 111.6L453.1 116.0L447.6 117.4L401.2 111.8L366.3 114.2L339.7 126.6L298.4 154.3L271.5 163.6L254.5 173.4L246.7 186.6L245.2 190.6L243.0 206.2L245.1 216.6L254.3 230.8L260.8 236.7L272.5 243.0L289.3 262.0L297.8 281.0L298.7 304.6L290.9 337.5L289.8 340.0\"/><path class=\"w1\" d=\"M508.4 16.9L504.2 51.9L495.2 82.6L481.9 104.7L465.6 118.3L456.0 123.5L448.1 125.5L401.0 119.8L368.3 122.0L343.7 133.6L302.0 161.6L274.7 170.9L261.8 177.9L259.3 180.1L253.1 192.3L251.0 206.4L252.9 214.5L259.9 225.1L265.1 230.0L277.9 237.0L296.1 257.7L305.7 279.2L306.8 305.4L298.6 340.0L600.0 340.0L600.0 0.0L507.9 0.0L508.4 16.9\"/><path class=\"ld\" d=\"M515.5 17.3L511.1 53.3L501.7 85.4L487.3 109.3L469.6 124.1L458.6 130.1L448.5 132.6L400.8 126.8L370.1 128.8L347.1 139.7L305.2 167.9L277.5 177.3L265.2 184.0L259.9 193.7L258.0 206.7L259.2 211.4L264.8 220.1L268.8 224.0L277.8 228.4L282.6 231.8L302.0 253.8L312.6 277.6L313.8 306.1L305.8 340.0L600.0 340.0L600.0 0.0L514.9 0.0L515.5 17.3Z\"/><path d=\"M515.5 17.3L511.1 53.3L501.7 85.4L487.3 109.3L469.6 124.1L458.6 130.1L448.5 132.6L400.8 126.8L370.1 128.8L347.1 139.7L305.2 167.9L277.5 177.3L265.2 184.0L259.9 193.7L258.0 206.7L259.2 211.4L264.8 220.1L268.8 224.0L277.8 228.4L282.6 231.8L302.0 253.8L312.6 277.6L313.8 306.1L305.8 340.0L600.0 340.0L600.0 0.0L514.9 0.0L515.5 17.3Z\" fill=\"url(#h1)\"/><path class=\"lo\" d=\"M515.5 17.3L511.1 53.3L501.7 85.4L487.3 109.3L469.6 124.1L458.6 130.1L448.5 132.6L400.8 126.8L370.1 128.8L347.1 139.7L305.2 167.9L277.5 177.3L265.2 184.0L259.9 193.7L258.0 206.7L259.2 211.4L264.8 220.1L268.8 224.0L277.8 228.4L282.6 231.8L302.0 253.8L312.6 277.6L313.8 306.1L305.8 340.0L600.0 340.0L600.0 0.0L514.9 0.0L515.5 17.3Z\"/></g><rect class=\"fr\" x=\"8\" y=\"8\" width=\"584\" height=\"324\"/><rect class=\"fr2\" x=\"13\" y=\"13\" width=\"574\" height=\"314\"/><path class=\"tk\" d=\"M8 235.4H17M592 235.4H583M8 65.4H17M592 65.4H583M102.9 8V17M102.9 332V323M235.6 8V17M235.6 332V323M368.3 8V17M368.3 332V323M501.1 8V17M501.1 332V323M8 303.4H12M592 303.4H588M8 269.4H12M592 269.4H588M8 235.4H12M592 235.4H588M8 201.4H12M592 201.4H588M8 167.4H12M592 167.4H588M8 133.4H12M592 133.4H588M8 99.4H12M592 99.4H588M8 65.4H12M592 65.4H588M8 31.4H12M592 31.4H588M23.3 8V12M23.3 332V328M49.8 8V12M49.8 332V328M76.4 8V12M76.4 332V328M102.9 8V12M102.9 332V328M129.5 8V12M129.5 332V328M156.0 8V12M156.0 332V328M182.5 8V12M182.5 332V328M209.1 8V12M209.1 332V328M235.6 8V12M235.6 332V328M262.2 8V12M262.2 332V328M288.7 8V12M288.7 332V328M315.3 8V12M315.3 332V328M341.8 8V12M341.8 332V328M368.3 8V12M368.3 332V328M394.9 8V12M394.9 332V328M421.4 8V12M421.4 332V328M448.0 8V12M448.0 332V328M474.5 8V12M474.5 332V328M501.1 8V12M501.1 332V328M527.6 8V12M527.6 332V328M554.2 8V12M554.2 332V328M580.7 8V12M580.7 332V328\"/><text class=\"tl\" x=\"21\" y=\"238.9\">38,6°N</text><text class=\"tl\" x=\"21\" y=\"68.9\">38,8°N</text><text class=\"tl\" x=\"102.9\" y=\"30\" text-anchor=\"middle\">15,6°E</text><text class=\"tl\" x=\"235.6\" y=\"30\" text-anchor=\"middle\">15,8°E</text><text class=\"tl\" x=\"368.3\" y=\"30\" text-anchor=\"middle\">16°E</text><text class=\"tl\" x=\"501.1\" y=\"30\" text-anchor=\"middle\">16,2°E</text><path class=\"sb\" d=\"M230 314h76.4M230 309v10M306.4 309v10\"/><text class=\"tl\" x=\"230\" y=\"303\">10 km</text><circle class=\"mk1\" cx=\"300\" cy=\"170\" r=\"11\"/><circle class=\"mk2\" cx=\"300\" cy=\"170\" r=\"4.5\"/><text class=\"nm\" x=\"316\" y=\"164\">Tropea</text></svg>", "<svg viewBox=\"0 0 600 340\" role=\"img\" aria-label=\"Mappa della zona di Cala Goloritzé\" xmlns=\"http://www.w3.org/2000/svg\"><defs><clipPath id=\"c2\"><rect x=\"8\" y=\"8\" width=\"584\" height=\"324\"/></clipPath><pattern id=\"h2\" width=\"5\" height=\"5\" patternUnits=\"userSpaceOnUse\" patternTransform=\"rotate(45)\"><path class=\"hp\" d=\"M0 0v5\"/></pattern></defs><g clip-path=\"url(#c2)\"><path class=\"rh\" d=\"M300 170L300 -630\"/><path class=\"rr\" d=\"M300 170L606 -569\"/><path class=\"rh\" d=\"M300 170L866 -396\"/><path class=\"rr\" d=\"M300 170L1039 -136\"/><path class=\"rh\" d=\"M300 170L1100 170\"/><path class=\"rr\" d=\"M300 170L1039 476\"/><path class=\"rh\" d=\"M300 170L866 736\"/><path class=\"rr\" d=\"M300 170L606 909\"/><path class=\"rh\" d=\"M300 170L300 970\"/><path class=\"rr\" d=\"M300 170L-6 909\"/><path class=\"rh\" d=\"M300 170L-266 736\"/><path class=\"rr\" d=\"M300 170L-439 476\"/><path class=\"rh\" d=\"M300 170L-500 170\"/><path class=\"rr\" d=\"M300 170L-439 -136\"/><path class=\"rh\" d=\"M300 170L-266 -396\"/><path class=\"rr\" d=\"M300 170L-6 -569\"/><path class=\"w3\" d=\"M337.8 340.0L339.2 333.0L338.9 327.7L336.1 316.4L333.9 311.8L327.0 304.4L322.7 301.7L317.5 300.0L320.4 280.5L347.6 207.5L349.9 188.1L349.5 180.8L347.2 173.9L343.0 167.9L326.4 155.1L310.3 132.6L300.3 123.6L292.2 119.2L289.9 115.5L274.1 70.1L273.1 64.3L270.2 26.3L270.9 16.6L275.1 3.7L277.4 0.0L0.0 0.0L0.0 340.0L337.8 340.0\"/><path class=\"w2\" d=\"M327.7 335.4L327.7 327.8L325.7 320.2L323.7 316.3L320.5 313.2L316.6 311.2L307.4 310.1L305.8 304.0L309.7 277.8L337.0 204.6L338.9 187.1L338.7 182.9L337.4 178.9L335.0 175.4L318.5 162.9L302.1 139.9L293.8 132.5L284.5 127.7L279.9 120.2L263.4 72.8L262.2 65.7L259.2 26.4L260.0 14.5L264.8 0.0L0.0 0.0L0.0 340.0L326.5 340.0L327.7 335.4\"/><path class=\"w1\" d=\"M318.2 340.0L320.1 330.4L318.4 323.6L315.8 319.7L312.6 318.4L306.9 318.1L301.8 320.1L297.7 304.5L301.9 275.8L329.3 202.4L330.9 184.3L328.6 180.4L312.7 168.6L295.6 144.7L288.5 138.6L278.9 133.9L272.7 123.7L255.6 74.8L254.3 66.6L251.2 26.4L252.1 12.9L256.3 0.0L0.0 0.0L0.0 340.0L318.2 340.0\"/><path class=\"ld\" d=\"M313.2 331.5L311.6 325.3L307.2 325.1L297.5 331.5L290.5 304.9L295.1 274.0L322.5 200.6L324.0 185.6L307.6 173.6L291.0 149.9L284.9 144.6L274.0 139.3L266.3 126.7L248.8 76.6L247.3 67.5L244.2 26.5L245.1 11.6L249.0 0.0L0.0 0.0L0.0 340.0L310.9 340.0L313.2 331.5Z\"/><path d=\"M313.2 331.5L311.6 325.3L307.2 325.1L297.5 331.5L290.5 304.9L295.1 274.0L322.5 200.6L324.0 185.6L307.6 173.6L291.0 149.9L284.9 144.6L274.0 139.3L266.3 126.7L248.8 76.6L247.3 67.5L244.2 26.5L245.1 11.6L249.0 0.0L0.0 0.0L0.0 340.0L310.9 340.0L313.2 331.5Z\" fill=\"url(#h2)\"/><path class=\"lo\" d=\"M313.2 331.5L311.6 325.3L307.2 325.1L297.5 331.5L290.5 304.9L295.1 274.0L322.5 200.6L324.0 185.6L307.6 173.6L291.0 149.9L284.9 144.6L274.0 139.3L266.3 126.7L248.8 76.6L247.3 67.5L244.2 26.5L245.1 11.6L249.0 0.0L0.0 0.0L0.0 340.0L310.9 340.0L313.2 331.5Z\"/></g><rect class=\"fr\" x=\"8\" y=\"8\" width=\"584\" height=\"324\"/><rect class=\"fr2\" x=\"13\" y=\"13\" width=\"574\" height=\"314\"/><path class=\"tk\" d=\"M8 267.1H17M592 267.1H583M8 72.9H17M592 72.9H583M77.1 8V17M77.1 332V323M225.7 8V17M225.7 332V323M374.3 8V17M374.3 332V323M522.9 8V17M522.9 332V323M8 306.0H12M592 306.0H588M8 267.1H12M592 267.1H588M8 228.3H12M592 228.3H588M8 189.4H12M592 189.4H588M8 150.6H12M592 150.6H588M8 111.7H12M592 111.7H588M8 72.9H12M592 72.9H588M8 34.0H12M592 34.0H588M17.6 8V12M17.6 332V328M47.4 8V12M47.4 332V328M77.1 8V12M77.1 332V328M106.8 8V12M106.8 332V328M136.5 8V12M136.5 332V328M166.2 8V12M166.2 332V328M196.0 8V12M196.0 332V328M225.7 8V12M225.7 332V328M255.4 8V12M255.4 332V328M285.1 8V12M285.1 332V328M314.9 8V12M314.9 332V328M344.6 8V12M344.6 332V328M374.3 8V12M374.3 332V328M404.0 8V12M404.0 332V328M433.8 8V12M433.8 332V328M463.5 8V12M463.5 332V328M493.2 8V12M493.2 332V328M522.9 8V12M522.9 332V328M552.6 8V12M552.6 332V328M582.4 8V12M582.4 332V328\"/><text class=\"tl\" x=\"21\" y=\"270.6\">40°N</text><text class=\"tl\" x=\"21\" y=\"76.4\">40,2°N</text><text class=\"tl\" x=\"77.1\" y=\"30\" text-anchor=\"middle\">9,4°E</text><text class=\"tl\" x=\"225.7\" y=\"30\" text-anchor=\"middle\">9,6°E</text><text class=\"tl\" x=\"374.3\" y=\"30\" text-anchor=\"middle\">9,8°E</text><text class=\"tl\" x=\"522.9\" y=\"30\" text-anchor=\"middle\">10°E</text><path class=\"sb\" d=\"M230 314h87.4M230 309v10M317.4 309v10\"/><text class=\"tl\" x=\"230\" y=\"303\">10 km</text><circle class=\"mk1\" cx=\"300\" cy=\"170\" r=\"11\"/><circle class=\"mk2\" cx=\"300\" cy=\"170\" r=\"4.5\"/><text class=\"nm\" x=\"316\" y=\"164\">Cala Goloritzé</text></svg>", "<svg viewBox=\"0 0 600 340\" role=\"img\" aria-label=\"Mappa della zona di Scala dei Turchi\" xmlns=\"http://www.w3.org/2000/svg\"><defs><clipPath id=\"c3\"><rect x=\"8\" y=\"8\" width=\"584\" height=\"324\"/></clipPath><pattern id=\"h3\" width=\"5\" height=\"5\" patternUnits=\"userSpaceOnUse\" patternTransform=\"rotate(45)\"><path class=\"hp\" d=\"M0 0v5\"/></pattern></defs><g clip-path=\"url(#c3)\"><path class=\"rh\" d=\"M300 170L300 -630\"/><path class=\"rr\" d=\"M300 170L606 -569\"/><path class=\"rh\" d=\"M300 170L866 -396\"/><path class=\"rr\" d=\"M300 170L1039 -136\"/><path class=\"rh\" d=\"M300 170L1100 170\"/><path class=\"rr\" d=\"M300 170L1039 476\"/><path class=\"rh\" d=\"M300 170L866 736\"/><path class=\"rr\" d=\"M300 170L606 909\"/><path class=\"rh\" d=\"M300 170L300 970\"/><path class=\"rr\" d=\"M300 170L-6 909\"/><path class=\"rh\" d=\"M300 170L-266 736\"/><path class=\"rr\" d=\"M300 170L-439 476\"/><path class=\"rh\" d=\"M300 170L-500 170\"/><path class=\"rr\" d=\"M300 170L-439 -136\"/><path class=\"rh\" d=\"M300 170L-266 -396\"/><path class=\"rr\" d=\"M300 170L-6 -569\"/><path class=\"w3\" d=\"M82.5 26.6L87.4 34.1L91.4 37.9L99.1 43.0L104.9 45.1L114.1 56.6L129.8 66.2L145.2 95.9L148.6 100.0L152.8 103.4L162.8 108.6L173.0 112.8L186.8 126.1L215.8 143.4L247.7 169.2L273.7 185.6L302.8 196.2L334.3 201.7L352.2 207.3L367.1 217.9L424.5 275.2L450.4 293.3L479.4 305.9L508.7 312.1L528.9 320.3L553.8 340.0L600.0 340.0L600.0 0.0L0.0 0.0L0.0 22.8L11.1 20.6L18.2 17.5L82.5 26.6\"/><path class=\"w2\" d=\"M89.5 16.4L96.8 28.0L102.8 32.5L110.8 35.3L122.6 49.3L138.2 58.6L153.7 88.5L157.6 93.3L168.8 99.3L176.6 102.0L180.0 104.2L193.2 117.1L222.1 134.4L254.6 160.7L277.1 174.9L305.6 185.5L336.9 191.0L357.1 197.4L374.2 209.5L431.5 266.8L455.7 283.7L482.7 295.4L511.9 301.6L534.5 310.7L571.6 340.0L600.0 340.0L600.0 0.0L0.0 0.0L0.0 11.7L8.1 10.0L16.3 6.2L89.5 16.4\"/><path class=\"w1\" d=\"M0.0 3.5L7.0 1.9L10.8 0.0L0.0 0.0L0.0 3.5M93.9 9.0L102.2 22.1L107.5 26.0L114.8 28.2L118.5 31.6L126.7 42.4L142.1 51.4L144.6 53.6L160.8 84.8L162.6 87.0L171.9 91.9L180.1 94.7L185.0 98.0L197.8 110.6L226.7 127.8L260.3 154.9L282.0 168.5L307.0 177.6L338.7 183.2L360.7 190.1L379.4 203.4L436.7 260.7L459.6 276.7L485.2 287.8L514.3 293.9L538.5 303.7L580.1 336.5L582.8 337.5L600.0 339.9L600.0 0.0L30.0 0.0L93.9 9.0\"/><path class=\"ld\" d=\"M96.7 2.3L100.3 5.0L106.9 17.0L110.6 19.7L118.3 21.9L123.7 26.9L131.4 37.1L146.2 45.7L150.3 49.2L167.0 81.6L174.6 85.5L183.2 88.4L189.5 92.5L201.9 104.9L230.7 122.0L264.1 149.0L285.1 162.3L309.4 171.0L340.4 176.4L363.9 183.8L383.9 198.0L441.2 255.3L463.1 270.6L487.3 281.1L516.3 287.2L542.1 297.6L583.8 330.6L600.0 332.8L600.0 0.0L80.4 0.0L96.7 2.3Z\"/><path d=\"M96.7 2.3L100.3 5.0L106.9 17.0L110.6 19.7L118.3 21.9L123.7 26.9L131.4 37.1L146.2 45.7L150.3 49.2L167.0 81.6L174.6 85.5L183.2 88.4L189.5 92.5L201.9 104.9L230.7 122.0L264.1 149.0L285.1 162.3L309.4 171.0L340.4 176.4L363.9 183.8L383.9 198.0L441.2 255.3L463.1 270.6L487.3 281.1L516.3 287.2L542.1 297.6L583.8 330.6L600.0 332.8L600.0 0.0L80.4 0.0L96.7 2.3Z\" fill=\"url(#h3)\"/><path class=\"lo\" d=\"M96.7 2.3L100.3 5.0L106.9 17.0L110.6 19.7L118.3 21.9L123.7 26.9L131.4 37.1L146.2 45.7L150.3 49.2L167.0 81.6L174.6 85.5L183.2 88.4L189.5 92.5L201.9 104.9L230.7 122.0L264.1 149.0L285.1 162.3L309.4 171.0L340.4 176.4L363.9 183.8L383.9 198.0L441.2 255.3L463.1 270.6L487.3 281.1L516.3 287.2L542.1 297.6L583.8 330.6L600.0 332.8L600.0 0.0L80.4 0.0L96.7 2.3Z\"/></g><rect class=\"fr\" x=\"8\" y=\"8\" width=\"584\" height=\"324\"/><rect class=\"fr2\" x=\"13\" y=\"13\" width=\"574\" height=\"314\"/><path class=\"tk\" d=\"M8 246.2H17M592 246.2H583M8 76.2H17M592 76.2H583M114.2 8V17M114.2 332V323M249.5 8V17M249.5 332V323M384.7 8V17M384.7 332V323M520.0 8V17M520.0 332V323M8 314.2H12M592 314.2H588M8 280.2H12M592 280.2H588M8 246.2H12M592 246.2H588M8 212.2H12M592 212.2H588M8 178.2H12M592 178.2H588M8 144.2H12M592 144.2H588M8 110.2H12M592 110.2H588M8 76.2H12M592 76.2H588M8 42.2H12M592 42.2H588M33.1 8V12M33.1 332V328M60.1 8V12M60.1 332V328M87.2 8V12M87.2 332V328M114.2 8V12M114.2 332V328M141.3 8V12M141.3 332V328M168.3 8V12M168.3 332V328M195.4 8V12M195.4 332V328M222.4 8V12M222.4 332V328M249.5 8V12M249.5 332V328M276.5 8V12M276.5 332V328M303.6 8V12M303.6 332V328M330.6 8V12M330.6 332V328M357.7 8V12M357.7 332V328M384.7 8V12M384.7 332V328M411.8 8V12M411.8 332V328M438.8 8V12M438.8 332V328M465.9 8V12M465.9 332V328M492.9 8V12M492.9 332V328M520.0 8V12M520.0 332V328M547.0 8V12M547.0 332V328M574.1 8V12M574.1 332V328\"/><text class=\"tl\" x=\"21\" y=\"249.7\">37,2°N</text><text class=\"tl\" x=\"21\" y=\"79.7\">37,4°N</text><text class=\"tl\" x=\"114.2\" y=\"30\" text-anchor=\"middle\">13,2°E</text><text class=\"tl\" x=\"249.5\" y=\"30\" text-anchor=\"middle\">13,4°E</text><text class=\"tl\" x=\"384.7\" y=\"30\" text-anchor=\"middle\">13,6°E</text><text class=\"tl\" x=\"520.0\" y=\"30\" text-anchor=\"middle\">13,8°E</text><path class=\"sb\" d=\"M230 314h76.4M230 309v10M306.4 309v10\"/><text class=\"tl\" x=\"230\" y=\"303\">10 km</text><circle class=\"mk1\" cx=\"300\" cy=\"170\" r=\"11\"/><circle class=\"mk2\" cx=\"300\" cy=\"170\" r=\"4.5\"/><text class=\"nm\" x=\"316\" y=\"164\">Scala dei Turchi</text></svg>", "<svg viewBox=\"0 0 600 340\" role=\"img\" aria-label=\"Mappa della zona di Stromboli\" xmlns=\"http://www.w3.org/2000/svg\"><defs><clipPath id=\"c4\"><rect x=\"8\" y=\"8\" width=\"584\" height=\"324\"/></clipPath><pattern id=\"h4\" width=\"5\" height=\"5\" patternUnits=\"userSpaceOnUse\" patternTransform=\"rotate(45)\"><path class=\"hp\" d=\"M0 0v5\"/></pattern></defs><g clip-path=\"url(#c4)\"><path class=\"rh\" d=\"M300 170L300 -630\"/><path class=\"rr\" d=\"M300 170L606 -569\"/><path class=\"rh\" d=\"M300 170L866 -396\"/><path class=\"rr\" d=\"M300 170L1039 -136\"/><path class=\"rh\" d=\"M300 170L1100 170\"/><path class=\"rr\" d=\"M300 170L1039 476\"/><path class=\"rh\" d=\"M300 170L866 736\"/><path class=\"rr\" d=\"M300 170L606 909\"/><path class=\"rh\" d=\"M300 170L300 970\"/><path class=\"rr\" d=\"M300 170L-6 909\"/><path class=\"rh\" d=\"M300 170L-266 736\"/><path class=\"rr\" d=\"M300 170L-439 476\"/><path class=\"rh\" d=\"M300 170L-500 170\"/><path class=\"rr\" d=\"M300 170L-439 -136\"/><path class=\"rh\" d=\"M300 170L-266 -396\"/><path class=\"rr\" d=\"M300 170L-6 -569\"/><path class=\"w3\" d=\"M341.8 115.6L325.5 108.5L308.0 105.0L300.0 106.0L286.8 110.5L279.1 116.6L271.9 127.2L261.3 132.4L256.8 135.9L245.7 147.0L241.6 153.6L239.7 161.1L239.6 170.0L240.1 175.3L242.9 182.8L247.9 189.0L273.1 212.5L279.6 216.9L302.0 222.9L309.3 223.0L316.3 221.0L330.0 212.3L334.1 208.8L345.5 191.4L349.5 180.4L355.9 169.3L357.5 164.9L360.7 146.5L360.3 139.2L356.6 130.3L347.5 120.1L341.8 115.6\"/><path class=\"w2\" d=\"M325.9 120.2L307.7 116.0L303.2 116.6L291.9 120.2L287.4 123.8L282.2 132.3L278.5 136.3L265.7 142.7L254.1 154.0L251.8 157.9L250.7 162.2L250.7 171.5L253.3 178.7L280.6 204.4L284.4 207.0L303.7 212.0L307.9 212.0L311.9 210.9L326.2 201.2L335.6 186.6L339.4 175.8L346.5 163.3L349.6 147.0L349.7 142.8L347.4 136.3L338.5 126.7L325.9 120.2\"/><path class=\"w1\" d=\"M322.6 127.5L307.6 124.0L295.6 127.3L293.1 129.5L288.7 137.1L283.4 142.9L270.7 149.0L259.1 161.0L258.6 170.7L259.9 174.0L287.8 199.8L304.9 204.1L308.7 203.6L320.4 195.6L328.4 183.2L332.1 172.4L339.0 160.6L341.8 143.7L340.3 140.1L333.3 132.7L322.6 127.5\"/><path class=\"ld\" d=\"M319.6 133.8L307.4 131.0L298.8 133.5L294.4 141.3L287.6 148.6L275.0 154.6L265.6 163.7L265.6 170.0L290.8 193.4L305.9 197.2L315.4 190.7L322.1 180.2L325.7 169.5L332.4 158.2L334.8 144.5L328.7 138.0L319.6 133.8Z\"/><path d=\"M319.6 133.8L307.4 131.0L298.8 133.5L294.4 141.3L287.6 148.6L275.0 154.6L265.6 163.7L265.6 170.0L290.8 193.4L305.9 197.2L315.4 190.7L322.1 180.2L325.7 169.5L332.4 158.2L334.8 144.5L328.7 138.0L319.6 133.8Z\" fill=\"url(#h4)\"/><path class=\"lo\" d=\"M319.6 133.8L307.4 131.0L298.8 133.5L294.4 141.3L287.6 148.6L275.0 154.6L265.6 163.7L265.6 170.0L290.8 193.4L305.9 197.2L315.4 190.7L322.1 180.2L325.7 169.5L332.4 158.2L334.8 144.5L328.7 138.0L319.6 133.8Z\"/></g><rect class=\"fr\" x=\"8\" y=\"8\" width=\"584\" height=\"324\"/><rect class=\"fr2\" x=\"13\" y=\"13\" width=\"574\" height=\"314\"/><path class=\"tk\" d=\"M8 151.3H17M592 151.3H583M150.3 8V17M150.3 332V323M282.8 8V17M282.8 332V323M415.3 8V17M415.3 332V323M547.8 8V17M547.8 332V323M8 321.3H12M592 321.3H588M8 287.3H12M592 287.3H588M8 253.3H12M592 253.3H588M8 219.3H12M592 219.3H588M8 185.3H12M592 185.3H588M8 151.3H12M592 151.3H588M8 117.3H12M592 117.3H588M8 83.3H12M592 83.3H588M8 49.3H12M592 49.3H588M8 15.3H12M592 15.3H588M17.8 8V12M17.8 332V328M44.3 8V12M44.3 332V328M70.8 8V12M70.8 332V328M97.3 8V12M97.3 332V328M123.8 8V12M123.8 332V328M150.3 8V12M150.3 332V328M176.8 8V12M176.8 332V328M203.3 8V12M203.3 332V328M229.8 8V12M229.8 332V328M256.3 8V12M256.3 332V328M282.8 8V12M282.8 332V328M309.3 8V12M309.3 332V328M335.8 8V12M335.8 332V328M362.3 8V12M362.3 332V328M388.8 8V12M388.8 332V328M415.3 8V12M415.3 332V328M441.8 8V12M441.8 332V328M468.3 8V12M468.3 332V328M494.8 8V12M494.8 332V328M521.3 8V12M521.3 332V328M547.8 8V12M547.8 332V328M574.3 8V12M574.3 332V328\"/><text class=\"tl\" x=\"21\" y=\"154.8\">38,8°N</text><text class=\"tl\" x=\"150.3\" y=\"30\" text-anchor=\"middle\">15,1°E</text><text class=\"tl\" x=\"282.8\" y=\"30\" text-anchor=\"middle\">15,2°E</text><text class=\"tl\" x=\"415.3\" y=\"30\" text-anchor=\"middle\">15,3°E</text><text class=\"tl\" x=\"547.8\" y=\"30\" text-anchor=\"middle\">15,4°E</text><path class=\"sb\" d=\"M230 314h76.4M230 309v10M306.4 309v10\"/><text class=\"tl\" x=\"230\" y=\"303\">5 km</text><circle class=\"mk1\" cx=\"300\" cy=\"170\" r=\"11\"/><circle class=\"mk2\" cx=\"300\" cy=\"170\" r=\"4.5\"/><text class=\"nm\" x=\"316\" y=\"164\">Stromboli</text></svg>", "<svg viewBox=\"0 0 600 340\" role=\"img\" aria-label=\"Mappa della zona di Procida\" xmlns=\"http://www.w3.org/2000/svg\"><defs><clipPath id=\"c5\"><rect x=\"8\" y=\"8\" width=\"584\" height=\"324\"/></clipPath><pattern id=\"h5\" width=\"5\" height=\"5\" patternUnits=\"userSpaceOnUse\" patternTransform=\"rotate(45)\"><path class=\"hp\" d=\"M0 0v5\"/></pattern></defs><g clip-path=\"url(#c5)\"><path class=\"rh\" d=\"M300 170L300 -630\"/><path class=\"rr\" d=\"M300 170L606 -569\"/><path class=\"rh\" d=\"M300 170L866 -396\"/><path class=\"rr\" d=\"M300 170L1039 -136\"/><path class=\"rh\" d=\"M300 170L1100 170\"/><path class=\"rr\" d=\"M300 170L1039 476\"/><path class=\"rh\" d=\"M300 170L866 736\"/><path class=\"rr\" d=\"M300 170L606 909\"/><path class=\"rh\" d=\"M300 170L300 970\"/><path class=\"rr\" d=\"M300 170L-6 909\"/><path class=\"rh\" d=\"M300 170L-266 736\"/><path class=\"rr\" d=\"M300 170L-439 476\"/><path class=\"rh\" d=\"M300 170L-500 170\"/><path class=\"rr\" d=\"M300 170L-439 -136\"/><path class=\"rh\" d=\"M300 170L-266 -396\"/><path class=\"rr\" d=\"M300 170L-6 -569\"/><path class=\"w3\" d=\"M311.6 71.3L311.2 79.3L312.3 84.6L314.5 89.5L329.6 110.5L333.4 114.0L337.7 116.7L345.0 119.0L391.8 126.4L403.9 132.3L408.9 133.7L416.7 133.8L424.2 131.6L430.7 127.2L434.2 123.4L437.8 116.4L439.0 111.4L436.7 73.1L429.5 39.0L428.0 19.6L430.7 14.5L436.5 13.0L455.2 19.8L496.6 45.1L501.6 47.5L507.0 48.7L552.7 54.3L580.4 86.1L584.7 88.9L589.4 90.8L600.0 91.7L600.0 0.0L326.2 0.0L311.6 71.3M245.1 170.4L237.2 202.8L237.5 208.0L238.8 213.1L242.5 219.9L246.1 223.7L250.4 226.7L255.2 228.8L260.2 229.9L266.5 235.9L280.8 243.5L290.4 246.3L297.8 245.9L307.0 242.2L314.2 235.2L317.5 228.6L318.6 223.7L318.8 218.7L317.8 213.1L324.4 209.6L328.2 206.2L333.4 197.7L334.9 190.1L342.2 186.2L347.5 180.7L350.1 176.2L351.7 171.3L352.4 166.2L352.0 161.1L350.6 156.1L348.2 151.5L338.2 138.6L332.1 133.0L316.3 126.3L310.1 119.8L303.6 116.0L296.2 114.3L288.7 114.7L275.5 118.7L270.9 121.2L267.0 124.5L257.7 135.8L251.6 140.4L248.2 144.1L245.6 148.3L243.3 155.4L243.0 162.8L245.1 170.4M29.8 333.9L36.9 340.0L85.3 340.0L94.9 334.5L119.6 325.5L136.1 323.8L149.5 330.9L156.8 332.8L164.4 332.5L173.7 328.8L201.5 302.7L216.6 292.4L220.0 288.4L222.5 283.7L224.0 278.7L224.3 270.8L218.4 250.9L218.5 245.9L223.5 232.9L224.5 225.5L223.4 218.1L220.2 211.4L213.2 204.3L173.4 177.5L55.2 134.9L46.4 133.3L9.0 133.3L0.0 135.0L0.0 319.3L29.8 333.9\"/><path class=\"w2\" d=\"M322.4 73.5L322.4 79.7L324.1 84.0L337.9 103.2L342.5 106.8L346.8 108.1L395.2 115.8L410.7 122.8L416.7 122.6L420.9 120.9L424.4 118.1L426.8 114.3L428.1 106.9L425.8 73.9L418.6 40.6L416.8 17.2L423.3 5.0L437.1 1.6L460.0 9.9L505.2 37.1L558.4 43.9L586.1 76.5L592.4 80.2L600.0 80.7L600.0 0.0L337.4 0.0L322.4 73.5M266.8 219.6L272.6 226.7L287.2 234.3L294.3 235.3L301.0 233.0L305.1 229.0L307.7 222.3L307.6 218.0L304.0 204.0L312.7 203.2L319.0 199.8L321.8 196.5L323.8 191.1L323.6 185.3L321.7 180.4L328.7 180.4L332.9 179.0L337.6 175.4L340.6 170.3L341.3 164.4L339.7 158.7L328.5 144.3L324.7 141.4L309.7 135.6L303.2 128.4L298.1 125.8L290.9 125.5L277.1 130.3L265.3 143.8L257.9 149.6L254.4 155.8L254.2 163.0L256.9 168.9L248.7 200.4L248.4 206.3L250.4 212.0L254.5 216.3L260.0 218.7L266.8 219.6M0.0 190.2L0.0 307.1L36.0 324.6L53.0 338.7L58.3 340.0L64.2 339.2L90.2 324.5L117.1 314.7L138.4 312.6L155.1 321.3L159.4 322.0L165.1 320.9L170.0 317.8L194.7 294.0L207.8 285.5L212.4 279.5L213.5 275.1L213.2 270.5L207.3 252.5L207.6 243.6L213.5 227.0L213.2 222.7L211.7 218.7L207.0 213.4L168.8 187.5L50.3 144.8L9.0 144.3L4.6 145.0L0.0 147.3L0.0 179.5L2.9 188.1L0.0 190.2\"/><path class=\"w1\" d=\"M330.2 75.1L330.2 78.0L331.4 80.6L343.4 97.4L346.0 99.6L397.7 108.1L412.0 114.9L414.8 114.8L417.9 113.2L419.6 111.0L420.2 108.2L417.8 74.5L410.7 41.8L408.6 15.5L416.9 0.0L345.6 0.0L330.2 75.1M463.4 2.6L507.8 29.6L562.4 36.4L591.7 70.8L595.3 72.7L600.0 72.7L600.0 0.0L456.2 0.0L463.4 2.6M274.6 217.3L277.0 220.0L290.2 226.9L294.2 227.3L297.2 225.9L299.2 223.2L299.8 219.9L294.4 199.0L299.9 196.2L311.4 195.3L315.0 192.3L315.9 189.8L315.8 187.1L310.4 174.7L313.8 172.7L317.3 172.2L328.8 172.1L331.6 170.2L333.2 167.1L333.3 164.3L332.3 161.8L322.3 149.4L304.9 142.4L298.7 135.1L295.8 133.4L292.5 133.3L281.6 136.9L270.9 149.7L264.2 154.6L262.1 158.0L262.2 161.9L265.6 167.5L256.4 202.3L256.4 205.8L258.1 208.9L261.0 210.7L268.3 211.7L271.4 211.0L274.6 217.3M115.3 306.8L140.0 304.4L156.9 313.4L161.5 313.7L164.4 312.0L189.7 287.7L203.4 278.8L205.2 275.8L205.5 273.0L199.3 253.7L199.6 242.0L205.4 227.0L205.4 224.3L204.3 221.9L165.5 194.8L48.8 152.7L9.0 152.3L5.0 153.5L2.5 156.8L2.2 160.9L10.4 185.3L13.3 190.5L1.9 198.7L0.0 201.5L0.0 298.2L40.4 317.9L55.2 330.7L59.0 332.0L62.8 331.1L86.8 317.2L115.3 306.8\"/><path class=\"ld\" d=\"M3.3 292.0L44.3 312.0L59.3 325.0L83.8 310.8L113.8 299.9L141.5 297.2L159.6 307.0L185.3 282.2L198.5 273.8L192.2 254.7L192.7 240.6L198.5 225.7L162.6 201.1L46.4 159.3L9.0 159.3L17.1 183.0L22.5 192.5L6.6 203.9L0.0 218.8L0.0 288.9L3.3 292.0ZM326.4 165.5L317.8 154.8L300.8 148.3L293.9 140.2L285.5 142.7L275.8 154.8L268.9 159.8L273.2 166.2L263.2 204.1L268.4 204.7L270.1 196.9L272.2 197.0L280.8 214.2L292.8 220.4L286.2 195.4L298.1 189.3L309.0 188.7L301.5 172.0L311.4 165.9L316.9 165.2L326.4 165.5ZM510.1 22.9L566.0 29.7L596.5 65.8L600.0 65.7L600.0 0.0L472.6 0.0L510.1 22.9ZM337.1 76.5L349.1 93.3L399.9 101.3L413.2 108.0L410.8 75.0L403.8 42.8L401.5 14.1L409.0 0.0L352.7 0.0L337.1 76.5Z\"/><path d=\"M3.3 292.0L44.3 312.0L59.3 325.0L83.8 310.8L113.8 299.9L141.5 297.2L159.6 307.0L185.3 282.2L198.5 273.8L192.2 254.7L192.7 240.6L198.5 225.7L162.6 201.1L46.4 159.3L9.0 159.3L17.1 183.0L22.5 192.5L6.6 203.9L0.0 218.8L0.0 288.9L3.3 292.0ZM326.4 165.5L317.8 154.8L300.8 148.3L293.9 140.2L285.5 142.7L275.8 154.8L268.9 159.8L273.2 166.2L263.2 204.1L268.4 204.7L270.1 196.9L272.2 197.0L280.8 214.2L292.8 220.4L286.2 195.4L298.1 189.3L309.0 188.7L301.5 172.0L311.4 165.9L316.9 165.2L326.4 165.5ZM510.1 22.9L566.0 29.7L596.5 65.8L600.0 65.7L600.0 0.0L472.6 0.0L510.1 22.9ZM337.1 76.5L349.1 93.3L399.9 101.3L413.2 108.0L410.8 75.0L403.8 42.8L401.5 14.1L409.0 0.0L352.7 0.0L337.1 76.5Z\" fill=\"url(#h5)\"/><path class=\"lo\" d=\"M3.3 292.0L44.3 312.0L59.3 325.0L83.8 310.8L113.8 299.9L141.5 297.2L159.6 307.0L185.3 282.2L198.5 273.8L192.2 254.7L192.7 240.6L198.5 225.7L162.6 201.1L46.4 159.3L9.0 159.3L17.1 183.0L22.5 192.5L6.6 203.9L0.0 218.8L0.0 288.9L3.3 292.0ZM326.4 165.5L317.8 154.8L300.8 148.3L293.9 140.2L285.5 142.7L275.8 154.8L268.9 159.8L273.2 166.2L263.2 204.1L268.4 204.7L270.1 196.9L272.2 197.0L280.8 214.2L292.8 220.4L286.2 195.4L298.1 189.3L309.0 188.7L301.5 172.0L311.4 165.9L316.9 165.2L326.4 165.5ZM510.1 22.9L566.0 29.7L596.5 65.8L600.0 65.7L600.0 0.0L472.6 0.0L510.1 22.9ZM337.1 76.5L349.1 93.3L399.9 101.3L413.2 108.0L410.8 75.0L403.8 42.8L401.5 14.1L409.0 0.0L352.7 0.0L337.1 76.5Z\"/></g><rect class=\"fr\" x=\"8\" y=\"8\" width=\"584\" height=\"324\"/><rect class=\"fr2\" x=\"13\" y=\"13\" width=\"574\" height=\"314\"/><path class=\"tk\" d=\"M8 310.9H17M592 310.9H583M8 68.0H17M592 68.0H583M77.4 8V17M77.4 332V323M261.4 8V17M261.4 332V323M445.3 8V17M445.3 332V323M8 310.9H12M592 310.9H588M8 262.3H12M592 262.3H588M8 213.7H12M592 213.7H588M8 165.1H12M592 165.1H588M8 116.6H12M592 116.6H588M8 68.0H12M592 68.0H588M8 19.4H12M592 19.4H588M40.6 8V12M40.6 332V328M77.4 8V12M77.4 332V328M114.2 8V12M114.2 332V328M151.0 8V12M151.0 332V328M187.8 8V12M187.8 332V328M224.6 8V12M224.6 332V328M261.4 8V12M261.4 332V328M298.2 8V12M298.2 332V328M335.0 8V12M335.0 332V328M371.7 8V12M371.7 332V328M408.5 8V12M408.5 332V328M445.3 8V12M445.3 332V328M482.1 8V12M482.1 332V328M518.9 8V12M518.9 332V328M555.7 8V12M555.7 332V328\"/><text class=\"tl\" x=\"21\" y=\"314.4\">40,7°N</text><text class=\"tl\" x=\"21\" y=\"71.5\">40,8°N</text><text class=\"tl\" x=\"77.4\" y=\"30\" text-anchor=\"middle\">13,9°E</text><text class=\"tl\" x=\"261.4\" y=\"30\" text-anchor=\"middle\">14°E</text><text class=\"tl\" x=\"445.3\" y=\"30\" text-anchor=\"middle\">14,1°E</text><path class=\"sb\" d=\"M230 314h109.2M230 309v10M339.2 309v10\"/><text class=\"tl\" x=\"230\" y=\"303\">5 km</text><circle class=\"mk1\" cx=\"300\" cy=\"170\" r=\"11\"/><circle class=\"mk2\" cx=\"300\" cy=\"170\" r=\"4.5\"/><text class=\"nm\" x=\"316\" y=\"164\">Procida</text></svg>", "<svg viewBox=\"0 0 600 340\" role=\"img\" aria-label=\"Mappa della zona di Sarakiniko\" xmlns=\"http://www.w3.org/2000/svg\"><defs><clipPath id=\"c6\"><rect x=\"8\" y=\"8\" width=\"584\" height=\"324\"/></clipPath><pattern id=\"h6\" width=\"5\" height=\"5\" patternUnits=\"userSpaceOnUse\" patternTransform=\"rotate(45)\"><path class=\"hp\" d=\"M0 0v5\"/></pattern></defs><g clip-path=\"url(#c6)\"><path class=\"rh\" d=\"M300 170L300 -630\"/><path class=\"rr\" d=\"M300 170L606 -569\"/><path class=\"rh\" d=\"M300 170L866 -396\"/><path class=\"rr\" d=\"M300 170L1039 -136\"/><path class=\"rh\" d=\"M300 170L1100 170\"/><path class=\"rr\" d=\"M300 170L1039 476\"/><path class=\"rh\" d=\"M300 170L866 736\"/><path class=\"rr\" d=\"M300 170L606 909\"/><path class=\"rh\" d=\"M300 170L300 970\"/><path class=\"rr\" d=\"M300 170L-6 909\"/><path class=\"rh\" d=\"M300 170L-266 736\"/><path class=\"rr\" d=\"M300 170L-439 476\"/><path class=\"rh\" d=\"M300 170L-500 170\"/><path class=\"rr\" d=\"M300 170L-439 -136\"/><path class=\"rh\" d=\"M300 170L-266 -396\"/><path class=\"rr\" d=\"M300 170L-6 -569\"/><path class=\"w3\" d=\"M600.0 243.4L593.6 247.7L588.7 253.8L585.9 261.0L585.3 268.8L587.0 276.4L593.1 291.9L595.6 296.7L600.0 301.8L600.0 243.4M468.4 0.0L469.4 7.8L476.7 32.8L489.0 58.8L503.6 81.5L509.6 86.3L516.6 89.1L521.7 89.7L529.2 88.9L538.3 84.4L565.9 54.0L572.5 50.4L576.6 47.0L582.0 39.6L585.2 32.6L586.1 24.9L585.2 16.0L580.1 0.0L468.4 0.0M236.6 229.9L235.5 239.9L237.2 247.9L233.1 261.7L232.6 267.1L233.3 272.5L236.7 287.2L238.7 291.7L243.3 297.7L251.6 303.1L258.8 304.9L266.3 304.6L292.3 294.6L374.1 292.3L401.4 283.8L416.5 276.4L422.3 272.4L432.8 260.3L435.7 253.3L436.5 248.3L434.7 202.8L436.5 192.5L437.9 192.0L446.5 203.7L450.6 208.2L462.9 218.5L467.3 221.0L474.7 223.0L479.8 223.1L494.7 219.4L502.1 216.0L508.0 210.5L517.7 192.1L519.0 187.1L519.3 181.8L517.3 167.5L515.5 162.7L512.8 158.2L503.1 147.6L499.2 144.8L495.3 139.8L489.2 135.3L478.5 131.4L478.7 119.3L476.9 112.1L473.2 105.7L464.9 96.4L458.4 92.2L453.5 90.6L445.8 90.0L438.6 91.6L426.3 88.0L416.7 87.9L402.2 91.9L388.9 99.4L383.3 104.0L374.6 114.3L368.3 131.5L367.6 138.8L368.3 143.6L371.0 151.8L375.0 160.3L359.1 169.0L348.7 160.8L335.6 153.2L330.8 151.6L323.3 151.0L315.8 152.5L309.2 156.2L295.8 170.8L289.2 167.1L281.7 165.5L276.5 165.7L269.1 167.8L262.6 172.0L252.7 182.9L250.0 187.3L245.5 199.6L241.1 204.1L238.3 208.5L236.4 213.3L235.5 218.4L236.6 229.9\"/><path class=\"w2\" d=\"M600.0 256.9L597.0 262.1L596.3 268.0L600.0 279.4L600.0 256.9M479.4 0.0L480.0 4.8L486.9 28.9L499.0 54.1L510.7 72.9L513.8 75.9L517.7 77.9L525.0 78.6L529.2 77.2L532.8 74.7L558.7 45.4L568.7 39.3L572.7 33.6L574.6 29.6L575.1 25.2L574.0 15.7L568.4 0.0L479.4 0.0M249.0 229.4L247.1 233.3L246.4 237.6L248.7 248.1L243.9 263.9L243.7 268.5L247.7 285.1L250.9 289.8L255.7 292.9L261.4 294.0L265.6 293.4L290.1 283.7L371.8 281.5L397.3 273.6L411.5 266.5L415.8 263.3L424.1 253.3L425.5 246.2L423.7 201.9L425.5 191.4L424.8 186.8L423.2 183.5L434.6 181.5L440.6 176.8L457.8 199.8L470.4 210.2L474.5 211.8L480.4 211.9L494.6 207.6L500.3 202.4L506.8 189.6L508.2 185.3L508.2 180.8L506.6 170.2L503.1 163.7L495.7 155.8L491.0 152.8L488.6 148.7L485.3 145.8L476.7 142.2L460.4 141.7L465.0 136.3L467.1 132.2L467.7 120.4L465.4 113.6L457.6 104.7L453.9 102.3L449.6 101.1L443.7 101.5L438.7 104.1L435.3 102.1L424.1 98.8L417.3 99.0L404.8 102.7L394.7 108.8L385.9 117.5L383.3 121.3L379.0 134.1L378.7 139.7L382.1 149.9L385.1 154.9L386.9 163.5L388.6 167.3L381.8 169.2L360.2 181.0L352.9 178.6L342.4 169.8L331.1 163.3L326.9 162.0L321.1 162.4L314.7 165.9L305.0 176.9L302.5 182.5L302.2 192.7L301.5 192.8L294.9 186.6L290.3 180.6L286.7 178.0L280.9 176.5L273.7 177.8L270.0 180.2L261.5 189.5L255.0 205.5L248.1 213.5L246.4 220.7L247.2 225.2L249.0 229.4\"/><path class=\"w1\" d=\"M487.4 0.0L494.7 26.6L506.5 51.3L517.0 68.0L520.3 70.4L523.7 70.7L527.3 68.9L553.2 39.2L562.5 34.1L566.6 28.1L567.1 25.3L566.2 17.6L559.9 0.0L487.4 0.0M484.0 157.6L483.2 155.0L481.5 152.9L475.6 150.2L460.2 149.9L456.7 152.2L447.4 163.8L445.9 167.0L446.8 171.7L462.4 193.2L473.7 202.9L476.9 204.1L489.6 201.1L492.1 199.7L493.9 197.5L500.3 184.0L499.0 172.9L498.0 170.2L490.3 161.7L484.0 157.6M453.3 137.6L459.2 130.4L459.8 121.8L458.7 118.0L455.2 115.2L452.9 111.2L450.0 109.3L446.6 109.1L438.6 114.0L432.2 109.5L421.3 106.5L408.9 109.7L397.8 116.4L390.9 124.0L386.6 137.2L389.3 146.4L392.7 151.9L394.7 161.8L400.8 169.9L404.2 172.2L417.7 176.0L430.2 174.5L433.7 172.6L453.3 137.6M259.0 230.8L256.0 233.3L254.6 236.4L254.5 239.1L257.0 248.1L251.6 266.9L254.7 281.2L256.5 284.0L258.8 285.5L263.4 285.7L288.4 275.7L370.2 273.7L394.9 266.0L409.0 258.7L416.5 250.5L417.5 246.6L415.6 201.3L417.4 190.0L416.2 187.3L407.6 175.4L403.7 172.7L400.2 172.7L385.0 176.5L361.0 189.7L348.9 185.7L337.3 176.0L327.8 170.5L323.1 170.1L320.1 171.8L311.1 182.2L310.1 185.6L310.7 194.3L318.2 203.1L325.1 214.0L332.3 219.8L334.9 220.8L338.3 220.6L344.3 217.5L351.2 227.2L351.8 230.2L350.6 230.9L330.8 230.9L321.8 226.2L314.6 204.6L312.8 201.7L310.5 200.3L307.8 199.8L299.9 201.4L292.4 195.7L284.3 185.9L279.7 184.4L275.3 186.2L267.9 194.3L261.9 209.9L254.9 217.8L254.4 221.3L255.3 223.9L257.2 226.0L260.7 227.9L259.0 230.8\"/><path class=\"ld\" d=\"M410.5 191.4L401.9 179.5L387.8 182.9L361.7 197.3L345.4 191.9L333.8 182.0L324.9 176.9L317.1 185.6L317.1 191.4L323.8 199.0L329.5 208.6L336.2 214.0L345.5 208.8L351.4 214.6L357.7 224.4L359.7 233.7L352.4 237.9L329.2 237.9L316.0 231.1L307.9 206.8L298.6 208.8L287.6 200.8L280.0 191.4L273.5 198.5L268.0 213.7L261.4 220.4L270.7 226.8L267.4 230.5L264.3 235.5L261.4 237.9L264.3 248.2L258.6 266.8L261.4 279.0L287.0 268.7L368.7 266.9L391.7 259.7L404.8 253.1L410.5 246.9L408.6 200.7L410.5 191.4ZM493.4 182.9L492.0 173.9L485.6 166.9L476.0 161.9L477.1 158.3L473.6 156.9L462.1 156.6L452.8 168.2L467.5 188.4L477.7 197.1L487.7 194.3L493.4 182.9ZM447.6 133.5L452.8 127.6L452.8 121.8L449.3 121.0L447.8 116.0L442.1 120.5L437.7 121.3L433.7 119.5L429.5 116.0L421.2 113.5L411.3 116.2L402.5 121.6L397.0 127.6L393.6 137.6L395.6 143.4L399.3 149.2L401.2 159.2L406.3 165.5L417.6 169.0L428.7 167.7L447.6 133.5ZM494.6 0.0L501.0 23.6L512.5 47.6L522.6 63.7L548.4 33.9L558.0 28.7L560.1 25.5L559.4 19.2L552.5 0.0L494.6 0.0Z\"/><path d=\"M410.5 191.4L401.9 179.5L387.8 182.9L361.7 197.3L345.4 191.9L333.8 182.0L324.9 176.9L317.1 185.6L317.1 191.4L323.8 199.0L329.5 208.6L336.2 214.0L345.5 208.8L351.4 214.6L357.7 224.4L359.7 233.7L352.4 237.9L329.2 237.9L316.0 231.1L307.9 206.8L298.6 208.8L287.6 200.8L280.0 191.4L273.5 198.5L268.0 213.7L261.4 220.4L270.7 226.8L267.4 230.5L264.3 235.5L261.4 237.9L264.3 248.2L258.6 266.8L261.4 279.0L287.0 268.7L368.7 266.9L391.7 259.7L404.8 253.1L410.5 246.9L408.6 200.7L410.5 191.4ZM493.4 182.9L492.0 173.9L485.6 166.9L476.0 161.9L477.1 158.3L473.6 156.9L462.1 156.6L452.8 168.2L467.5 188.4L477.7 197.1L487.7 194.3L493.4 182.9ZM447.6 133.5L452.8 127.6L452.8 121.8L449.3 121.0L447.8 116.0L442.1 120.5L437.7 121.3L433.7 119.5L429.5 116.0L421.2 113.5L411.3 116.2L402.5 121.6L397.0 127.6L393.6 137.6L395.6 143.4L399.3 149.2L401.2 159.2L406.3 165.5L417.6 169.0L428.7 167.7L447.6 133.5ZM494.6 0.0L501.0 23.6L512.5 47.6L522.6 63.7L548.4 33.9L558.0 28.7L560.1 25.5L559.4 19.2L552.5 0.0L494.6 0.0Z\" fill=\"url(#h6)\"/><path class=\"lo\" d=\"M410.5 191.4L401.9 179.5L387.8 182.9L361.7 197.3L345.4 191.9L333.8 182.0L324.9 176.9L317.1 185.6L317.1 191.4L323.8 199.0L329.5 208.6L336.2 214.0L345.5 208.8L351.4 214.6L357.7 224.4L359.7 233.7L352.4 237.9L329.2 237.9L316.0 231.1L307.9 206.8L298.6 208.8L287.6 200.8L280.0 191.4L273.5 198.5L268.0 213.7L261.4 220.4L270.7 226.8L267.4 230.5L264.3 235.5L261.4 237.9L264.3 248.2L258.6 266.8L261.4 279.0L287.0 268.7L368.7 266.9L391.7 259.7L404.8 253.1L410.5 246.9L408.6 200.7L410.5 191.4ZM493.4 182.9L492.0 173.9L485.6 166.9L476.0 161.9L477.1 158.3L473.6 156.9L462.1 156.6L452.8 168.2L467.5 188.4L477.7 197.1L487.7 194.3L493.4 182.9ZM447.6 133.5L452.8 127.6L452.8 121.8L449.3 121.0L447.8 116.0L442.1 120.5L437.7 121.3L433.7 119.5L429.5 116.0L421.2 113.5L411.3 116.2L402.5 121.6L397.0 127.6L393.6 137.6L395.6 143.4L399.3 149.2L401.2 159.2L406.3 165.5L417.6 169.0L428.7 167.7L447.6 133.5ZM494.6 0.0L501.0 23.6L512.5 47.6L522.6 63.7L548.4 33.9L558.0 28.7L560.1 25.5L559.4 19.2L552.5 0.0L494.6 0.0Z\"/></g><rect class=\"fr\" x=\"8\" y=\"8\" width=\"584\" height=\"324\"/><rect class=\"fr2\" x=\"13\" y=\"13\" width=\"574\" height=\"314\"/><path class=\"tk\" d=\"M8 152.3H17M592 152.3H583M174.9 8V17M174.9 332V323M311.1 8V17M311.1 332V323M447.3 8V17M447.3 332V323M8 322.3H12M592 322.3H588M8 288.3H12M592 288.3H588M8 254.3H12M592 254.3H588M8 220.3H12M592 220.3H588M8 186.3H12M592 186.3H588M8 152.3H12M592 152.3H588M8 118.3H12M592 118.3H588M8 84.3H12M592 84.3H588M8 50.3H12M592 50.3H588M8 16.3H12M592 16.3H588M38.8 8V12M38.8 332V328M66.0 8V12M66.0 332V328M93.2 8V12M93.2 332V328M120.5 8V12M120.5 332V328M147.7 8V12M147.7 332V328M174.9 8V12M174.9 332V328M202.2 8V12M202.2 332V328M229.4 8V12M229.4 332V328M256.6 8V12M256.6 332V328M283.9 8V12M283.9 332V328M311.1 8V12M311.1 332V328M338.3 8V12M338.3 332V328M365.6 8V12M365.6 332V328M392.8 8V12M392.8 332V328M420.0 8V12M420.0 332V328M447.3 8V12M447.3 332V328M474.5 8V12M474.5 332V328M501.7 8V12M501.7 332V328M529.0 8V12M529.0 332V328M556.2 8V12M556.2 332V328M583.4 8V12M583.4 332V328\"/><text class=\"tl\" x=\"21\" y=\"155.8\">36,8°N</text><text class=\"tl\" x=\"174.9\" y=\"30\" text-anchor=\"middle\">24,2°E</text><text class=\"tl\" x=\"311.1\" y=\"30\" text-anchor=\"middle\">24,4°E</text><text class=\"tl\" x=\"447.3\" y=\"30\" text-anchor=\"middle\">24,6°E</text><path class=\"sb\" d=\"M230 314h76.4M230 309v10M306.4 309v10\"/><text class=\"tl\" x=\"230\" y=\"303\">10 km</text><circle class=\"mk1\" cx=\"300\" cy=\"170\" r=\"11\"/><circle class=\"mk2\" cx=\"300\" cy=\"170\" r=\"4.5\"/><text class=\"nm\" x=\"316\" y=\"164\">Sarakiniko</text></svg>", "<svg viewBox=\"0 0 600 340\" role=\"img\" aria-label=\"Mappa della zona di Laguna Blu\" xmlns=\"http://www.w3.org/2000/svg\"><defs><clipPath id=\"c7\"><rect x=\"8\" y=\"8\" width=\"584\" height=\"324\"/></clipPath><pattern id=\"h7\" width=\"5\" height=\"5\" patternUnits=\"userSpaceOnUse\" patternTransform=\"rotate(45)\"><path class=\"hp\" d=\"M0 0v5\"/></pattern></defs><g clip-path=\"url(#c7)\"><path class=\"rh\" d=\"M300 170L300 -630\"/><path class=\"rr\" d=\"M300 170L606 -569\"/><path class=\"rh\" d=\"M300 170L866 -396\"/><path class=\"rr\" d=\"M300 170L1039 -136\"/><path class=\"rh\" d=\"M300 170L1100 170\"/><path class=\"rr\" d=\"M300 170L1039 476\"/><path class=\"rh\" d=\"M300 170L866 736\"/><path class=\"rr\" d=\"M300 170L606 909\"/><path class=\"rh\" d=\"M300 170L300 970\"/><path class=\"rr\" d=\"M300 170L-6 909\"/><path class=\"rh\" d=\"M300 170L-266 736\"/><path class=\"rr\" d=\"M300 170L-439 476\"/><path class=\"rh\" d=\"M300 170L-500 170\"/><path class=\"rr\" d=\"M300 170L-439 -136\"/><path class=\"rh\" d=\"M300 170L-266 -396\"/><path class=\"rr\" d=\"M300 170L-6 -569\"/><path class=\"w3\" d=\"M274.3 167.3L277.4 182.7L280.5 191.3L279.8 196.7L280.7 204.4L282.6 209.2L285.5 213.6L291.2 218.8L298.2 222.2L311.0 223.7L316.9 223.3L308.2 229.2L281.5 253.4L276.3 261.8L274.7 269.0L275.2 276.4L277.8 283.4L297.8 308.4L306.9 340.0L600.0 340.0L600.0 317.3L559.3 282.3L554.6 279.0L515.0 263.5L430.8 253.6L434.1 246.7L435.1 241.7L435.2 221.2L434.1 213.6L429.3 204.7L421.5 198.2L411.8 195.3L377.7 198.0L381.4 191.0L382.8 183.5L381.9 175.9L378.9 168.9L358.4 146.9L354.2 144.4L343.3 140.3L348.1 133.4L349.9 128.5L350.6 123.4L350.3 118.2L349.0 113.2L345.2 106.4L303.0 61.6L234.7 17.6L187.3 0.0L144.6 0.0L45.8 15.1L15.5 26.0L9.4 31.0L5.1 37.5L3.4 42.4L2.7 47.6L4.2 70.8L10.6 96.0L5.5 118.4L5.7 126.3L7.2 131.4L9.6 136.0L15.0 141.9L53.0 166.3L91.6 183.0L135.5 195.2L179.4 198.9L221.6 189.9L272.3 166.9L274.3 167.3\"/><path class=\"w2\" d=\"M307.7 303.1L317.9 340.0L600.0 340.0L600.0 331.8L550.8 289.6L515.3 275.0L511.5 274.0L390.1 260.0L396.2 256.8L414.8 253.0L419.7 249.8L423.0 244.9L424.2 239.1L424.2 221.2L423.6 216.8L421.7 212.8L418.7 209.6L415.0 207.3L410.7 206.2L375.1 209.4L344.4 219.5L316.6 236.5L290.6 259.8L287.9 263.1L285.9 268.4L285.8 272.7L286.9 276.8L289.1 280.5L307.7 303.1M288.3 155.2L285.4 161.8L285.3 166.1L288.6 181.8L292.2 190.7L290.9 195.5L291.0 199.9L294.1 206.7L300.0 211.2L304.3 212.3L313.1 212.7L337.5 208.7L364.7 195.3L368.0 192.5L371.0 187.4L371.7 181.6L369.5 174.7L353.0 156.7L348.2 153.8L326.5 145.8L319.2 144.8L334.6 133.4L338.2 128.6L339.5 124.4L339.4 119.9L338.1 115.6L335.6 112.0L296.0 70.1L228.3 26.8L177.3 8.1L171.4 7.1L48.5 25.7L22.4 34.8L17.6 38.4L15.1 42.1L13.7 48.0L15.4 71.5L21.9 95.7L16.4 119.8L16.9 125.8L18.8 130.0L23.1 134.2L56.2 155.6L96.0 172.9L139.8 184.9L180.6 187.8L218.1 179.4L269.7 156.0L288.3 155.2\"/><path class=\"w1\" d=\"M315.0 299.3L325.6 335.8L326.0 340.0L597.3 340.0L546.3 296.2L511.8 282.2L370.7 265.8L383.8 254.2L393.6 249.2L411.2 245.9L414.6 243.6L416.2 239.8L416.1 219.8L413.6 215.7L409.9 214.2L376.8 217.3L348.5 226.5L320.9 243.3L295.5 266.2L293.7 270.4L294.9 274.9L315.0 299.3M303.1 203.8L313.4 204.6L335.4 200.9L361.0 188.2L363.6 184.2L363.0 179.5L346.0 161.6L323.0 153.1L307.7 152.3L304.4 152.9L295.1 159.6L293.7 161.9L293.2 165.2L296.2 179.4L300.7 190.5L298.8 196.5L299.3 199.9L300.8 202.2L303.1 203.8M291.5 76.8L226.2 34.6L173.2 15.2L50.4 33.5L25.8 42.1L23.1 44.3L21.8 47.5L23.3 70.1L30.1 95.6L24.3 120.8L24.8 124.3L26.4 126.6L60.5 148.8L100.1 165.8L141.9 177.1L180.4 179.8L215.6 171.9L267.8 148.0L300.9 146.7L304.8 145.4L329.3 127.4L331.2 124.6L331.5 121.1L329.7 117.4L291.5 76.8\"/><path class=\"ld\" d=\"M542.4 302.0L509.8 288.9L354.4 271.0L379.8 248.4L391.3 242.5L409.2 239.1L409.2 221.2L378.2 224.1L350.7 233.1L325.6 248.5L300.7 271.0L321.3 296.0L332.5 334.5L333.0 340.0L586.5 340.0L542.4 302.0ZM356.8 182.6L343.0 167.9L321.3 159.9L307.4 159.3L300.2 164.4L302.9 177.4L308.2 190.2L305.8 197.3L311.0 196.2L312.3 197.7L332.3 194.7L356.8 182.6ZM286.4 81.6L223.1 40.9L172.1 22.1L52.1 40.3L28.7 48.4L30.2 69.0L37.4 95.5L31.3 121.6L63.3 142.4L101.9 159.1L142.4 170.2L178.8 172.9L213.4 165.2L266.1 141.1L300.7 139.7L324.6 122.2L286.4 81.6Z\"/><path d=\"M542.4 302.0L509.8 288.9L354.4 271.0L379.8 248.4L391.3 242.5L409.2 239.1L409.2 221.2L378.2 224.1L350.7 233.1L325.6 248.5L300.7 271.0L321.3 296.0L332.5 334.5L333.0 340.0L586.5 340.0L542.4 302.0ZM356.8 182.6L343.0 167.9L321.3 159.9L307.4 159.3L300.2 164.4L302.9 177.4L308.2 190.2L305.8 197.3L311.0 196.2L312.3 197.7L332.3 194.7L356.8 182.6ZM286.4 81.6L223.1 40.9L172.1 22.1L52.1 40.3L28.7 48.4L30.2 69.0L37.4 95.5L31.3 121.6L63.3 142.4L101.9 159.1L142.4 170.2L178.8 172.9L213.4 165.2L266.1 141.1L300.7 139.7L324.6 122.2L286.4 81.6Z\" fill=\"url(#h7)\"/><path class=\"lo\" d=\"M542.4 302.0L509.8 288.9L354.4 271.0L379.8 248.4L391.3 242.5L409.2 239.1L409.2 221.2L378.2 224.1L350.7 233.1L325.6 248.5L300.7 271.0L321.3 296.0L332.5 334.5L333.0 340.0L586.5 340.0L542.4 302.0ZM356.8 182.6L343.0 167.9L321.3 159.9L307.4 159.3L300.2 164.4L302.9 177.4L308.2 190.2L305.8 197.3L311.0 196.2L312.3 197.7L332.3 194.7L356.8 182.6ZM286.4 81.6L223.1 40.9L172.1 22.1L52.1 40.3L28.7 48.4L30.2 69.0L37.4 95.5L31.3 121.6L63.3 142.4L101.9 159.1L142.4 170.2L178.8 172.9L213.4 165.2L266.1 141.1L300.7 139.7L324.6 122.2L286.4 81.6Z\"/></g><rect class=\"fr\" x=\"8\" y=\"8\" width=\"584\" height=\"324\"/><rect class=\"fr2\" x=\"13\" y=\"13\" width=\"574\" height=\"314\"/><path class=\"tk\" d=\"M8 205.7H17M592 205.7H583M60.9 8V17M60.9 332V323M257.4 8V17M257.4 332V323M453.8 8V17M453.8 332V323M8 302.8H12M592 302.8H588M8 254.3H12M592 254.3H588M8 205.7H12M592 205.7H588M8 157.1H12M592 157.1H588M8 108.6H12M592 108.6H588M8 60.0H12M592 60.0H588M21.6 8V12M21.6 332V328M60.9 8V12M60.9 332V328M100.2 8V12M100.2 332V328M139.5 8V12M139.5 332V328M178.8 8V12M178.8 332V328M218.1 8V12M218.1 332V328M257.4 8V12M257.4 332V328M296.7 8V12M296.7 332V328M335.9 8V12M335.9 332V328M375.2 8V12M375.2 332V328M414.5 8V12M414.5 332V328M453.8 8V12M453.8 332V328M493.1 8V12M493.1 332V328M532.4 8V12M532.4 332V328M571.7 8V12M571.7 332V328\"/><text class=\"tl\" x=\"21\" y=\"209.2\">36°N</text><text class=\"tl\" x=\"60.9\" y=\"30\" text-anchor=\"middle\">14,2°E</text><text class=\"tl\" x=\"257.4\" y=\"30\" text-anchor=\"middle\">14,3°E</text><text class=\"tl\" x=\"453.8\" y=\"30\" text-anchor=\"middle\">14,4°E</text><path class=\"sb\" d=\"M230 314h109.2M230 309v10M339.2 309v10\"/><text class=\"tl\" x=\"230\" y=\"303\">5 km</text><circle class=\"mk1\" cx=\"300\" cy=\"170\" r=\"11\"/><circle class=\"mk2\" cx=\"300\" cy=\"170\" r=\"4.5\"/><text class=\"nm\" x=\"316\" y=\"164\">Laguna Blu</text></svg>"];
-  var T=document.getElementById("tavole"),R=["I","II","III","IV","V","VI","VII","VIII"];
-  T.innerHTML=P.map(function(p,i){return '<article class="tav"><div class="map">'+MAPS[i]+'</div><div class="txt"><div class="tn">Tavola '+R[i]+'</div><h3>'+p[0]+'</h3><div class="reg">'+p[1]+'</div><p>'+p[3]+'</p><dl><dt>Coordinate</dt><dd>'+p[2]+'</dd><dt>Luce</dt><dd>'+p[4]+'</dd><dt>Stagione</dt><dd>'+p[5]+'</dd></dl></div></article>'}).join("");
-  var rh=document.getElementById("rh"),h="";
-  [[420,350],[980,350]].forEach(function(c,ci){for(var k=0;k<16;k++){var a=k*Math.PI/8,x=c[0]+1400*Math.sin(a),y=c[1]-1400*Math.cos(a);h+='<line x1="'+c[0]+'" y1="'+c[1]+'" x2="'+x.toFixed(0)+'" y2="'+y.toFixed(0)+'" stroke="'+((k+ci)%2?"#b3322a":"#1f5f7a")+'" stroke-width=".8" opacity=".28"/>'}h+='<circle cx="'+c[0]+'" cy="'+c[1]+'" r="120" stroke="#3a2a1c" stroke-width=".8" opacity=".3"/><circle cx="'+c[0]+'" cy="'+c[1]+'" r="200" stroke="#3a2a1c" stroke-width=".6" opacity=".2"/>'});
-  rh.innerHTML=h;
-
-  var KEY="portolano_consent",cc=document.getElementById("cc");
-  window.dataLayer=window.dataLayer||[];
-  function gtag(){dataLayer.push(arguments)}
-  gtag("consent","default",{ad_storage:"denied",analytics_storage:"denied",ad_user_data:"denied",ad_personalization:"denied",wait_for_update:500});
-  function read(){try{return JSON.parse(localStorage.getItem(KEY))}catch(e){return null}}
-  function write(v){try{localStorage.setItem(KEY,JSON.stringify(v))}catch(e){}}
-  function apply(v){
-    gtag("consent","update",{analytics_storage:v.an?"granted":"denied",ad_storage:v.ad?"granted":"denied",ad_user_data:v.ad?"granted":"denied",ad_personalization:v.ad?"granted":"denied"});
-    // Carica i tag Google qui SOLO se v.an o v.ad è true (aggiungi il tuo ID tag).
-  }
-  function choose(an,ad){var v={an:an,ad:ad,t:Date.now()};write(v);apply(v);cc.classList.remove("show")}
-  function show(){var v=read()||{};document.getElementById("c-an").checked=!!v.an;document.getElementById("c-ad").checked=!!v.ad;cc.classList.add("show")}
-  var s=read();if(s){apply(s)}else{cc.classList.add("show")}
-  document.getElementById("cc-all").onclick=function(){choose(true,true)};
-  document.getElementById("cc-none").onclick=function(){choose(false,false)};
-  document.getElementById("cc-x").onclick=function(){choose(false,false)};
-  document.getElementById("cc-cust").onclick=function(){document.getElementById("prefs").classList.add("open");this.style.display="none";document.getElementById("cc-save").style.display="inline-block"};
-  document.getElementById("cc-save").onclick=function(){choose(document.getElementById("c-an").checked,document.getElementById("c-ad").checked)};
-  document.getElementById("cc-reopen").onclick=show;
-  document.querySelectorAll("[data-open]").forEach(function(b){b.onclick=function(){var d=document.getElementById(b.dataset.open);if(d.showModal)d.showModal()}});
-  document.querySelectorAll("[data-close]").forEach(function(b){b.onclick=function(){b.closest("dialog").close()}});
-  document.querySelectorAll("dialog").forEach(function(d){d.addEventListener("click",function(e){if(e.target===d)d.close()})});
-})();
-</script>
+<script src="js/main.js" defer></script>
 </body>
 </html>
+

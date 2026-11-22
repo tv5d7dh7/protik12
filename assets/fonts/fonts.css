@@ -1,0 +1,6 @@
+/* Self-hosted latin subsets — Cormorant Garamond (display) + Archivo (UI) */
+@font-face{font-family:"Cormorant Garamond";font-style:normal;font-weight:500 600;font-display:swap;src:url("cormorant-garamond-normal-500.woff2") format("woff2")}
+@font-face{font-family:"Cormorant Garamond";font-style:normal;font-weight:700;font-display:swap;src:url("cormorant-garamond-normal-700.woff2") format("woff2")}
+@font-face{font-family:"Cormorant Garamond";font-style:italic;font-weight:500 600;font-display:swap;src:url("cormorant-garamond-italic-500.woff2") format("woff2")}
+@font-face{font-family:"Archivo";font-style:normal;font-weight:400 500;font-display:swap;src:url("archivo-normal-400.woff2") format("woff2")}
+@font-face{font-family:"Archivo";font-style:normal;font-weight:600;font-display:swap;src:url("archivo-normal-600.woff2") format("woff2")}
