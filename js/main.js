@@ -2,6 +2,8 @@
    THREE WAYS IN — interactions, consent, Meta Pixel
    Pixel ID comes from <meta name="fb-pixel-id">.
    The pixel is NEVER loaded before explicit consent.
+   Every pixel event carries an eventID (for CAPI deduplication)
+   and the same ID is pushed to dataLayer as event_id.
    ============================================================ */
 (function () {
   'use strict';
@@ -23,6 +25,14 @@
   function log() {
     if (!debug) return;
     try { console.log.apply(console, ['[Three Ways In]'].concat([].slice.call(arguments))); } catch (e) {}
+  }
+
+  /* ---------------- event id (deduplication) ---------------- */
+  function newEventId(prefix) {
+    var rnd = (window.crypto && typeof window.crypto.randomUUID === 'function')
+      ? window.crypto.randomUUID()
+      : Date.now() + '_' + Math.random().toString(36).slice(2, 10);
+    return prefix + '_' + rnd;
   }
 
   /* ---------------- consent storage ---------------- */
@@ -64,9 +74,10 @@
       s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s);
     }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
 
-    window.fbq('init', PIXEL_ID);
-    window.fbq('track', 'PageView');
-    window.fbq('track', 'ViewContent', {
+    var pvId = newEventId('pv');
+    var vcId = newEventId('vc');
+
+    var vcPayload = {
       content_name: 'Three Ways In travel library',
       content_category: 'Travel books',
       content_type: 'product',
@@ -78,8 +89,28 @@
       ],
       value: 150.00,
       currency: 'EUR'
+    };
+
+    window.fbq('init', PIXEL_ID);
+    window.fbq('track', 'PageView', {}, { eventID: pvId });
+    window.fbq('track', 'ViewContent', vcPayload, { eventID: vcId });
+
+    // Same IDs go to dataLayer so the server-side container can reuse them.
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: 'page_view_meta',
+      event_id: pvId
     });
-    log('pixel initialised', PIXEL_ID);
+    window.dataLayer.push({
+      event: 'view_content',
+      event_id: vcId,
+      content_name: vcPayload.content_name,
+      content_ids: vcPayload.content_ids.join(','),
+      value: vcPayload.value,
+      currency: vcPayload.currency
+    });
+
+    log('pixel initialised', PIXEL_ID, { pageView: pvId, viewContent: vcId });
     return true;
   }
 
@@ -99,17 +130,19 @@
     };
 
     if (pixelLoaded && typeof window.fbq === 'function') {
-      window.fbq('track', 'Lead', payload);
+      var leadId = newEventId('lead');
+      window.fbq('track', 'Lead', payload, { eventID: leadId });
       window.dataLayer = window.dataLayer || [];
       window.dataLayer.push({
         event: 'lead',
+        event_id: leadId,
         lead_source: 'amazon_button',
         content_name: title,
         content_ids: asin,
         value: price,
         currency: currency
       });
-      log('Lead', payload);
+      log('Lead', payload, leadId);
     } else {
       log('Lead skipped — no consent or pixel not loaded', payload);
     }
